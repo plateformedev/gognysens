@@ -884,3 +884,85 @@ details > *:not(summary) {
     max-width: 300px;
   }
 }
+
+/* ==========================================================================
+   RGPD Form Elements
+   ========================================================================== */
+
+.cognisens-rgpd-checkbox {
+    margin: var(--space-lg) 0;
+    padding: var(--space-md);
+    background: var(--color-gray-lighter);
+    border-left: 2px solid var(--color-accent);
+}
+
+.cognisens-rgpd-checkbox label.rgpd-label {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+    cursor: pointer;
+}
+
+.cognisens-rgpd-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    accent-color: var(--color-black);
+}
+
+.cognisens-rgpd-checkbox .rgpd-text {
+    font-size: var(--text-sm);
+    color: var(--color-gray-dark);
+    line-height: 1.6;
+}
+
+.cognisens-rgpd-checkbox .rgpd-text a {
+    color: var(--color-black);
+    text-decoration: underline;
+}
+
+.cognisens-rgpd-checkbox .rgpd-text a:hover {
+    color: var(--color-accent);
+}
+
+.cognisens-rgpd-checkbox .required {
+    color: #c00;
+    font-weight: 500;
+}
+
+/* RGPD + IA variant */
+.cognisens-rgpd-ai {
+    border-left-color: var(--color-gray-medium);
+}
+
+/* Footer cookies button */
+.footer-cookies-btn {
+    background: transparent;
+    border: none;
+    color: var(--color-gray-medium);
+    cursor: pointer;
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.footer-cookies-btn:hover {
+    color: var(--color-black);
+}
+
+/* Legal page responsive adjustments */
+@media (max-width: 768px) {
+    .legal-nav {
+        flex-wrap: wrap;
+        gap: var(--space-md);
+    }
+
+    .footer-legal {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-md);
+    }
+}

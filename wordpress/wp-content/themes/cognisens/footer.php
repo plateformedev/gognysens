@@ -60,8 +60,13 @@ if (!defined('ABSPATH')) {
                         <a href="<?php echo esc_url(home_url('/mentions-legales/')); ?>"><?php esc_html_e('Mentions legales', 'cognisens'); ?></a>
                         <a href="<?php echo esc_url(home_url('/politique-de-confidentialite/')); ?>"><?php esc_html_e('Confidentialite', 'cognisens'); ?></a>
                         <a href="<?php echo esc_url(home_url('/politique-cookies/')); ?>"><?php esc_html_e('Cookies', 'cognisens'); ?></a>
+                        <a href="<?php echo esc_url(home_url('/conditions-generales-utilisation/')); ?>"><?php esc_html_e('CGU', 'cognisens'); ?></a>
+                        <a href="<?php echo esc_url(home_url('/conditions-generales-prestations/')); ?>"><?php esc_html_e('CGP', 'cognisens'); ?></a>
                         <a href="<?php echo esc_url(home_url('/donnees-personnelles-et-ia/')); ?>"><?php esc_html_e('IA & Donnees', 'cognisens'); ?></a>
                     </nav>
+                    <?php if (function_exists('cmplz_manage_consent_button')) : ?>
+                        <button class="cmplz-manage-consent footer-cookies-btn"><?php esc_html_e('Gerer les cookies', 'cognisens'); ?></button>
+                    <?php endif; ?>
                 </div>
                 <div class="footer-copyright">
                     <p>&copy; <?php echo esc_html(date('Y')); ?> Cognisens. <?php esc_html_e('Tous droits reserves.', 'cognisens'); ?></p>

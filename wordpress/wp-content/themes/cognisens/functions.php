@@ -267,3 +267,13 @@ require_once COGNISENS_DIR . '/inc/dev-mode.php';
  * Include recommended plugins configuration
  */
 require_once COGNISENS_DIR . '/inc/recommended-plugins.php';
+
+/**
+ * Include RGPD form helpers
+ */
+require_once COGNISENS_DIR . '/inc/rgpd-forms.php';
+
+/**
+ * Include cookie banner configuration
+ */
+require_once COGNISENS_DIR . '/inc/cookie-banner.php';
