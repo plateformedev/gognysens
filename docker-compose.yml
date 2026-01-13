@@ -18,6 +18,7 @@ services:
         define('WP_MAX_MEMORY_LIMIT', '512M');
         define('DISALLOW_FILE_EDIT', true);
         define('WP_AUTO_UPDATE_CORE', false);
+        define('COGNISENS_DEV_MODE', true);
     volumes:
       - ./wordpress/wp-content:/var/www/html/wp-content
       - wordpress_data:/var/www/html

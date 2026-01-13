@@ -239,3 +239,31 @@ require_once COGNISENS_DIR . '/inc/blocks.php';
  * Include SEO functions
  */
 require_once COGNISENS_DIR . '/inc/seo.php';
+
+/**
+ * Include ACF fields for custom blocks
+ */
+require_once COGNISENS_DIR . '/inc/acf-fields.php';
+
+/**
+ * Enqueue blocks CSS
+ */
+function cognisens_enqueue_blocks_css() {
+    wp_enqueue_style(
+        'cognisens-blocks',
+        COGNISENS_URI . '/assets/css/blocks.css',
+        array('cognisens-style'),
+        COGNISENS_VERSION
+    );
+}
+add_action('wp_enqueue_scripts', 'cognisens_enqueue_blocks_css');
+
+/**
+ * Include development mode settings (noindex)
+ */
+require_once COGNISENS_DIR . '/inc/dev-mode.php';
+
+/**
+ * Include recommended plugins configuration
+ */
+require_once COGNISENS_DIR . '/inc/recommended-plugins.php';

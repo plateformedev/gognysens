@@ -1,0 +1,16 @@
+{
+  "name": "acf/cognisens-cta",
+  "title": "CTA Discret",
+  "description": "Appel a l'action sobre et elegant",
+  "category": "cognisens",
+  "icon": "megaphone",
+  "keywords": ["cta", "action", "bouton", "rdv"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "blocks/cta/cta.php"
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "anchor": true
+  }
+}

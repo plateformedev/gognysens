@@ -1,0 +1,16 @@
+{
+  "name": "acf/cognisens-tarif",
+  "title": "Carte Tarif",
+  "description": "Affichage d'un tarif ou d'une fourchette de prix",
+  "category": "cognisens",
+  "icon": "money-alt",
+  "keywords": ["tarif", "prix", "honoraires"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "blocks/tarif/tarif.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": true
+  }
+}
