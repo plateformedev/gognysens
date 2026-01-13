@@ -1,0 +1,102 @@
+/**
+ * Gutenberg Editor Styles
+ * Matches the frontend design system
+ */
+
+.editor-styles-wrapper {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333333;
+}
+
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 500;
+  color: #000000;
+}
+
+.editor-styles-wrapper h1 {
+  font-size: 3.5rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.editor-styles-wrapper h2 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+}
+
+.editor-styles-wrapper h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.editor-styles-wrapper a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.editor-styles-wrapper a:hover {
+  color: #8B7355;
+}
+
+/* Button block */
+.editor-styles-wrapper .wp-block-button__link {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: 0;
+}
+
+/* Quote block */
+.editor-styles-wrapper .wp-block-quote {
+  border-left: 2px solid #8B7355;
+  padding-left: 1.5rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+}
+
+/* Table block */
+.editor-styles-wrapper .wp-block-table table {
+  border-collapse: collapse;
+}
+
+.editor-styles-wrapper .wp-block-table th,
+.editor-styles-wrapper .wp-block-table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.editor-styles-wrapper .wp-block-table th {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+}
+
+/* Details block (FAQ) */
+.editor-styles-wrapper details summary {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Columns */
+.editor-styles-wrapper .wp-block-columns {
+  gap: 2rem;
+}
+
+/* Group with border */
+.editor-styles-wrapper .wp-block-group.has-border-color {
+  padding: 2.5rem 1.5rem;
+}

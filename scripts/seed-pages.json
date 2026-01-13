@@ -1,0 +1,587 @@
+{
+  "pages": [
+    {
+      "title": "Le Cabinet",
+      "slug": "le-cabinet",
+      "template": "",
+      "parent": "",
+      "menu_order": 1,
+      "seo": {
+        "title": "Le Cabinet Cognisens | Expert Bati Ancien & AMO",
+        "description": "Decouvrez Cognisens, cabinet independant d'expertise et d'AMO specialise dans le bati ancien et patrimonial en Ile-de-France."
+      }
+    },
+    {
+      "title": "Equipe",
+      "slug": "equipe",
+      "template": "",
+      "parent": "le-cabinet",
+      "menu_order": 2,
+      "seo": {
+        "title": "Notre Equipe | Cognisens Expert Bati Ancien",
+        "description": "Rencontrez l'equipe Cognisens : experts en bati ancien, pathologies du batiment et assistance a maitrise d'ouvrage."
+      }
+    },
+    {
+      "title": "Methodologie",
+      "slug": "methodologie",
+      "template": "",
+      "parent": "le-cabinet",
+      "menu_order": 3,
+      "seo": {
+        "title": "Notre Methodologie d'Expertise | Cognisens",
+        "description": "Decouvrez la methodologie rigoureuse de Cognisens pour l'expertise du bati ancien et l'accompagnement de vos projets."
+      }
+    },
+    {
+      "title": "Independance et Deontologie",
+      "slug": "independance-deontologie",
+      "template": "",
+      "parent": "le-cabinet",
+      "menu_order": 4,
+      "seo": {
+        "title": "Independance et Deontologie | Cognisens",
+        "description": "Notre engagement d'independance : aucun lien avec les entreprises de travaux, avis strictement technique et objectif."
+      }
+    },
+    {
+      "title": "Cadre Juridique",
+      "slug": "cadre-juridique",
+      "template": "",
+      "parent": "le-cabinet",
+      "menu_order": 5,
+      "seo": {
+        "title": "Cadre Juridique de l'Expertise | Cognisens",
+        "description": "Comprendre le cadre juridique de l'expertise en batiment et de l'assistance a maitrise d'ouvrage."
+      }
+    },
+    {
+      "title": "Zone d'Intervention",
+      "slug": "zone-intervention",
+      "template": "",
+      "parent": "le-cabinet",
+      "menu_order": 6,
+      "seo": {
+        "title": "Zone d'Intervention | Paris, 92, 94, 78 | Cognisens",
+        "description": "Cognisens intervient a Paris et en Ile-de-France : Hauts-de-Seine (92), Val-de-Marne (94), Yvelines (78)."
+      }
+    },
+    {
+      "title": "Expert Bati Ancien Paris",
+      "slug": "expert-bati-ancien-paris",
+      "template": "",
+      "parent": "zone-intervention",
+      "menu_order": 1,
+      "seo": {
+        "title": "Expert Bati Ancien Paris 75 | Expertise & AMO | Cognisens",
+        "description": "Expert en bati ancien a Paris (75). Expertise technique, DTG, AMO pour immeubles parisiens et patrimoine haussmannien."
+      }
+    },
+    {
+      "title": "Expert Bati Ancien Hauts-de-Seine",
+      "slug": "expert-bati-ancien-hauts-de-seine",
+      "template": "",
+      "parent": "zone-intervention",
+      "menu_order": 2,
+      "seo": {
+        "title": "Expert Bati Ancien Hauts-de-Seine 92 | Cognisens",
+        "description": "Expert bati ancien dans les Hauts-de-Seine (92). Expertise, diagnostic et AMO pour coproprietes et particuliers."
+      }
+    },
+    {
+      "title": "Expert Bati Ancien Val-de-Marne",
+      "slug": "expert-bati-ancien-val-de-marne",
+      "template": "",
+      "parent": "zone-intervention",
+      "menu_order": 3,
+      "seo": {
+        "title": "Expert Bati Ancien Val-de-Marne 94 | Cognisens",
+        "description": "Expert bati ancien dans le Val-de-Marne (94). Expertise technique et AMO pour votre patrimoine immobilier."
+      }
+    },
+    {
+      "title": "Expert Bati Ancien Yvelines",
+      "slug": "expert-bati-ancien-yvelines",
+      "template": "",
+      "parent": "zone-intervention",
+      "menu_order": 4,
+      "seo": {
+        "title": "Expert Bati Ancien Yvelines 78 | Cognisens",
+        "description": "Expert bati ancien dans les Yvelines (78). Expertise et AMO a Versailles, Saint-Germain, et environs."
+      }
+    },
+    {
+      "title": "Expertise Amiable Bati Ancien",
+      "slug": "expertise-amiable-bati-ancien",
+      "template": "",
+      "parent": "",
+      "menu_order": 10,
+      "seo": {
+        "title": "Expertise Amiable Bati Ancien | Diagnostic Independant | Cognisens",
+        "description": "Expertise amiable pour bati ancien : diagnostic technique independant, analyse des desordres, rapport d'expertise detaille."
+      }
+    },
+    {
+      "title": "Assistance Expertise Judiciaire Bati Patrimonial",
+      "slug": "assistance-expertise-judiciaire-bati-patrimonial",
+      "template": "",
+      "parent": "",
+      "menu_order": 11,
+      "seo": {
+        "title": "Assistance Expertise Judiciaire | Bati Patrimonial | Cognisens",
+        "description": "Assistance technique lors d'expertises judiciaires sur bati ancien et patrimonial. Accompagnement expert."
+      }
+    },
+    {
+      "title": "DTG Bati Ancien Copropriete",
+      "slug": "dtg-bati-ancien-copropriete",
+      "template": "",
+      "parent": "",
+      "menu_order": 12,
+      "seo": {
+        "title": "DTG Bati Ancien | Diagnostic Technique Global Copropriete | Cognisens",
+        "description": "DTG adapte au bati ancien pour coproprietes. Diagnostic technique global specialise patrimoine immobilier."
+      }
+    },
+    {
+      "title": "Expertise Fissuration Facade Bati Ancien",
+      "slug": "expertise-fissuration-facade-bati-ancien",
+      "template": "",
+      "parent": "",
+      "menu_order": 13,
+      "seo": {
+        "title": "Expertise Fissures Facade | Bati Ancien | Cognisens",
+        "description": "Expertise des fissures de facade sur bati ancien. Analyse des causes, preconisations de traitement."
+      }
+    },
+    {
+      "title": "Expertise Ravalement Parisien",
+      "slug": "expertise-ravalement-parisien",
+      "template": "",
+      "parent": "",
+      "menu_order": 14,
+      "seo": {
+        "title": "Expertise Ravalement Parisien | Immeuble Haussmannien | Cognisens",
+        "description": "Expertise avant ravalement d'immeuble parisien. Analyse technique pour eviter les malfacons."
+      }
+    },
+    {
+      "title": "Expertise Pathologies Bois Bati Ancien",
+      "slug": "expertise-pathologies-bois-bati-ancien",
+      "template": "",
+      "parent": "",
+      "menu_order": 15,
+      "seo": {
+        "title": "Expertise Pathologies Bois | Charpente, Plancher | Cognisens",
+        "description": "Expertise des pathologies du bois en bati ancien : champignons, insectes xylophages, humidite."
+      }
+    },
+    {
+      "title": "AMO Bati Ancien Patrimonial",
+      "slug": "amo-bati-ancien-patrimonial",
+      "template": "",
+      "parent": "",
+      "menu_order": 20,
+      "seo": {
+        "title": "AMO Bati Ancien et Patrimonial | Assistance Maitrise Ouvrage | Cognisens",
+        "description": "Assistance a Maitrise d'Ouvrage specialisee bati ancien. Accompagnement technique de vos projets patrimoniaux."
+      }
+    },
+    {
+      "title": "AMO Copropriete Eviter Surpayer Travaux",
+      "slug": "amo-copropriete-eviter-surpayer-travaux",
+      "template": "",
+      "parent": "",
+      "menu_order": 21,
+      "seo": {
+        "title": "AMO Copropriete | Eviter de Surpayer vos Travaux | Cognisens",
+        "description": "AMO pour coproprietes : evitez de surpayer vos travaux. Analyse des devis, negociation, suivi de chantier."
+      }
+    },
+    {
+      "title": "AMO Fonciere Patrimoniale",
+      "slug": "amo-fonciere-patrimoniale",
+      "template": "",
+      "parent": "",
+      "menu_order": 22,
+      "seo": {
+        "title": "AMO Fonciere Patrimoniale | Cognisens",
+        "description": "Assistance a Maitrise d'Ouvrage pour foncieres patrimoniales. Gestion technique de votre patrimoine immobilier."
+      }
+    },
+    {
+      "title": "AMO Particulier Bati Ancien",
+      "slug": "amo-particulier-bati-ancien",
+      "template": "",
+      "parent": "",
+      "menu_order": 23,
+      "seo": {
+        "title": "AMO Particulier | Renovation Bati Ancien | Cognisens",
+        "description": "AMO pour particuliers en bati ancien. Accompagnement personnalise pour votre projet de renovation."
+      }
+    },
+    {
+      "title": "AMO Indivision SCI Bati Ancien",
+      "slug": "amo-indivision-sci-bati-ancien",
+      "template": "",
+      "parent": "",
+      "menu_order": 24,
+      "seo": {
+        "title": "AMO Indivision et SCI | Bati Ancien | Cognisens",
+        "description": "AMO pour indivisions et SCI en bati ancien. Conseil technique neutre pour decisions collectives."
+      }
+    },
+    {
+      "title": "AMO Apres Expertise",
+      "slug": "amo-apres-expertise",
+      "template": "",
+      "parent": "",
+      "menu_order": 25,
+      "seo": {
+        "title": "AMO Apres Expertise | Mise en Oeuvre Preconisations | Cognisens",
+        "description": "Accompagnement AMO apres expertise pour la mise en oeuvre des preconisations techniques."
+      }
+    },
+    {
+      "title": "Expertise Pierre et Pierre de Taille",
+      "slug": "expertise-pierre-pierre-de-taille",
+      "template": "",
+      "parent": "",
+      "menu_order": 30,
+      "seo": {
+        "title": "Expertise Pierre de Taille | Facade, Moellon | Cognisens",
+        "description": "Expertise des ouvrages en pierre : pierre de taille, moellon, pathologies, restauration."
+      }
+    },
+    {
+      "title": "Expertise Sculpture Pierre",
+      "slug": "expertise-sculpture-pierre",
+      "template": "",
+      "parent": "",
+      "menu_order": 31,
+      "seo": {
+        "title": "Expertise Sculpture Pierre | Elements Decoratifs | Cognisens",
+        "description": "Expertise des sculptures et elements decoratifs en pierre. Evaluation etat, preconisations conservation."
+      }
+    },
+    {
+      "title": "Expertise Pan de Bois Colombage",
+      "slug": "expertise-pan-de-bois-colombage",
+      "template": "",
+      "parent": "",
+      "menu_order": 32,
+      "seo": {
+        "title": "Expertise Pan de Bois et Colombage | Cognisens",
+        "description": "Expertise des constructions a pan de bois et colombage. Diagnostic structurel et pathologies."
+      }
+    },
+    {
+      "title": "Expertise Charpente Traditionnelle",
+      "slug": "expertise-charpente-traditionnelle",
+      "template": "",
+      "parent": "",
+      "menu_order": 33,
+      "seo": {
+        "title": "Expertise Charpente Traditionnelle | Bois Ancien | Cognisens",
+        "description": "Expertise des charpentes traditionnelles en bois. Diagnostic structurel, pathologies, preconisations."
+      }
+    },
+    {
+      "title": "Expertise Couverture Zinc Ardoise",
+      "slug": "expertise-couverture-zinc-ardoise",
+      "template": "",
+      "parent": "",
+      "menu_order": 34,
+      "seo": {
+        "title": "Expertise Couverture Zinc et Ardoise | Toiture | Cognisens",
+        "description": "Expertise des couvertures en zinc et ardoise. Diagnostic toiture, infiltrations, vetuste."
+      }
+    },
+    {
+      "title": "Expertise Zinguerie Patrimoniale",
+      "slug": "expertise-zinguerie-patrimoniale",
+      "template": "",
+      "parent": "",
+      "menu_order": 35,
+      "seo": {
+        "title": "Expertise Zinguerie Patrimoniale | Ornements Zinc | Cognisens",
+        "description": "Expertise de la zinguerie patrimoniale : ornements, evacuations, elements decoratifs en zinc."
+      }
+    },
+    {
+      "title": "Expertise Stucs Parisiens",
+      "slug": "expertise-stucs-parisiens",
+      "template": "",
+      "parent": "",
+      "menu_order": 36,
+      "seo": {
+        "title": "Expertise Stucs Parisiens | Decoration Interieure | Cognisens",
+        "description": "Expertise des stucs parisiens et decorations interieures. Moulures, corniches, rosaces."
+      }
+    },
+    {
+      "title": "Expertise Modenatures",
+      "slug": "expertise-modenatures",
+      "template": "",
+      "parent": "",
+      "menu_order": 37,
+      "seo": {
+        "title": "Expertise Modenatures | Elements Architecturaux | Cognisens",
+        "description": "Expertise des modenatures et elements architecturaux de facade. Corniches, bandeaux, encadrements."
+      }
+    },
+    {
+      "title": "Fissures Facade Immeuble Ancien",
+      "slug": "fissures-facade-immeuble-ancien",
+      "template": "",
+      "parent": "",
+      "menu_order": 40,
+      "seo": {
+        "title": "Fissures Facade Immeuble Ancien | Causes et Solutions | Cognisens",
+        "description": "Comprendre les fissures de facade en immeuble ancien. Causes, gravite, solutions de traitement."
+      }
+    },
+    {
+      "title": "Infiltrations Toiture Zinc Ardoise",
+      "slug": "infiltrations-toiture-zinc-ardoise",
+      "template": "",
+      "parent": "",
+      "menu_order": 41,
+      "seo": {
+        "title": "Infiltrations Toiture Zinc Ardoise | Diagnostic | Cognisens",
+        "description": "Infiltrations par la toiture zinc ou ardoise. Diagnostic des causes et solutions de reparation."
+      }
+    },
+    {
+      "title": "Bois Champignons Insectes Humidite",
+      "slug": "bois-champignons-insectes-humidite",
+      "template": "",
+      "parent": "",
+      "menu_order": 42,
+      "seo": {
+        "title": "Pathologies Bois | Champignons, Insectes, Humidite | Cognisens",
+        "description": "Pathologies du bois en batiment ancien : merule, vrillettes, capricornes, humidite. Diagnostic et traitement."
+      }
+    },
+    {
+      "title": "Pierre qui se Delite",
+      "slug": "pierre-qui-se-delite",
+      "template": "",
+      "parent": "",
+      "menu_order": 43,
+      "seo": {
+        "title": "Pierre qui se Delite | Desagregation, Erosion | Cognisens",
+        "description": "Pierre de facade qui se delite, s'effrite ou s'erode. Causes et solutions de restauration."
+      }
+    },
+    {
+      "title": "Decollement Enduit Facade",
+      "slug": "decollement-enduit-facade",
+      "template": "",
+      "parent": "",
+      "menu_order": 44,
+      "seo": {
+        "title": "Decollement Enduit Facade | Causes et Reparation | Cognisens",
+        "description": "Enduit de facade qui se decolle ou cloque. Analyse des causes et solutions de reparation."
+      }
+    },
+    {
+      "title": "Desordres Apres Ravalement",
+      "slug": "desordres-apres-ravalement",
+      "template": "",
+      "parent": "",
+      "menu_order": 45,
+      "seo": {
+        "title": "Desordres Apres Ravalement | Malfacons | Cognisens",
+        "description": "Desordres apparus apres un ravalement de facade. Expertise des malfacons et recours possibles."
+      }
+    },
+    {
+      "title": "Deformations Structurelles Bati Ancien",
+      "slug": "deformations-structurelles-bati-ancien",
+      "template": "",
+      "parent": "",
+      "menu_order": 46,
+      "seo": {
+        "title": "Deformations Structurelles | Bati Ancien | Cognisens",
+        "description": "Deformations structurelles en bati ancien : affaissement, basculement, tassement. Diagnostic et solutions."
+      }
+    },
+    {
+      "title": "Honoraires et Tarifs Expertise AMO",
+      "slug": "honoraires-tarifs-expertise-amo",
+      "template": "templates/page-tarifs.php",
+      "parent": "",
+      "menu_order": 50,
+      "seo": {
+        "title": "Tarifs Expertise et AMO | Honoraires | Cognisens",
+        "description": "Tarifs transparents pour nos prestations d'expertise et d'AMO. Honoraires clairs, devis personnalise."
+      }
+    },
+    {
+      "title": "Combien Coute une Expertise Fissure Facade",
+      "slug": "combien-coute-expertise-fissure-facade",
+      "template": "",
+      "parent": "honoraires-tarifs-expertise-amo",
+      "menu_order": 51,
+      "seo": {
+        "title": "Prix Expertise Fissure Facade | Tarif | Cognisens",
+        "description": "Combien coute une expertise de fissures de facade ? Tarifs indicatifs et facteurs de variation."
+      }
+    },
+    {
+      "title": "Combien Coute un DTG Bati Ancien",
+      "slug": "combien-coute-dtg-bati-ancien",
+      "template": "",
+      "parent": "honoraires-tarifs-expertise-amo",
+      "menu_order": 52,
+      "seo": {
+        "title": "Prix DTG Bati Ancien | Tarif Diagnostic | Cognisens",
+        "description": "Combien coute un DTG pour copropriete en bati ancien ? Tarifs et facteurs de variation."
+      }
+    },
+    {
+      "title": "Combien Coute une Assistance Expertise Judiciaire",
+      "slug": "combien-coute-assistance-expertise-judiciaire",
+      "template": "",
+      "parent": "honoraires-tarifs-expertise-amo",
+      "menu_order": 53,
+      "seo": {
+        "title": "Prix Assistance Expertise Judiciaire | Tarif | Cognisens",
+        "description": "Tarifs de l'assistance technique lors d'une expertise judiciaire en batiment."
+      }
+    },
+    {
+      "title": "Combien Coute une AMO Copropriete",
+      "slug": "combien-coute-amo-copropriete",
+      "template": "",
+      "parent": "honoraires-tarifs-expertise-amo",
+      "menu_order": 54,
+      "seo": {
+        "title": "Prix AMO Copropriete | Tarif Assistance | Cognisens",
+        "description": "Combien coute une AMO pour copropriete ? Honoraires en pourcentage ou forfait."
+      }
+    },
+    {
+      "title": "Combien Coutent les Travaux de Ravalement Parisien",
+      "slug": "combien-coutent-travaux-ravalement-parisien",
+      "template": "",
+      "parent": "honoraires-tarifs-expertise-amo",
+      "menu_order": 55,
+      "seo": {
+        "title": "Prix Ravalement Parisien | Cout Travaux | Cognisens",
+        "description": "Estimation du cout des travaux de ravalement d'un immeuble parisien. Prix au m2, facteurs de variation."
+      }
+    },
+    {
+      "title": "Combien Coutent les Travaux de Charpente Ancienne",
+      "slug": "combien-coutent-travaux-charpente-ancienne",
+      "template": "",
+      "parent": "honoraires-tarifs-expertise-amo",
+      "menu_order": 56,
+      "seo": {
+        "title": "Prix Travaux Charpente Ancienne | Cout | Cognisens",
+        "description": "Estimation du cout des travaux de charpente ancienne. Reparation, remplacement, traitement."
+      }
+    },
+    {
+      "title": "Contact",
+      "slug": "contact",
+      "template": "templates/page-contact.php",
+      "parent": "",
+      "menu_order": 60,
+      "seo": {
+        "title": "Contact | Cognisens Expert Bati Ancien",
+        "description": "Contactez Cognisens pour vos projets d'expertise et d'AMO en bati ancien. Formulaire et coordonnees."
+      }
+    },
+    {
+      "title": "Prendre Rendez-vous",
+      "slug": "prendre-rendez-vous",
+      "template": "templates/page-contact.php",
+      "parent": "",
+      "menu_order": 61,
+      "seo": {
+        "title": "Prendre Rendez-vous | Cognisens",
+        "description": "Prenez rendez-vous avec un expert Cognisens. Premier echange gratuit de 15 minutes."
+      }
+    },
+    {
+      "title": "Mentions Legales",
+      "slug": "mentions-legales",
+      "template": "templates/page-legal.php",
+      "parent": "",
+      "menu_order": 70,
+      "seo": {
+        "title": "Mentions Legales | Cognisens",
+        "description": "Mentions legales du site Cognisens. Editeur, hebergement, propriete intellectuelle."
+      }
+    },
+    {
+      "title": "Politique de Confidentialite",
+      "slug": "politique-de-confidentialite",
+      "template": "templates/page-legal.php",
+      "parent": "",
+      "menu_order": 71,
+      "seo": {
+        "title": "Politique de Confidentialite | RGPD | Cognisens",
+        "description": "Politique de confidentialite et protection des donnees personnelles. Conformite RGPD."
+      }
+    },
+    {
+      "title": "Politique Cookies",
+      "slug": "politique-cookies",
+      "template": "templates/page-legal.php",
+      "parent": "",
+      "menu_order": 72,
+      "seo": {
+        "title": "Politique Cookies | Cognisens",
+        "description": "Politique d'utilisation des cookies sur le site Cognisens. Gestion des preferences."
+      }
+    },
+    {
+      "title": "Conditions Generales d'Utilisation",
+      "slug": "conditions-generales-utilisation",
+      "template": "templates/page-legal.php",
+      "parent": "",
+      "menu_order": 73,
+      "seo": {
+        "title": "CGU | Conditions Generales d'Utilisation | Cognisens",
+        "description": "Conditions generales d'utilisation du site Cognisens."
+      }
+    },
+    {
+      "title": "Conditions Generales de Prestations",
+      "slug": "conditions-generales-prestations",
+      "template": "templates/page-legal.php",
+      "parent": "",
+      "menu_order": 74,
+      "seo": {
+        "title": "CGP | Conditions Generales de Prestations | Cognisens",
+        "description": "Conditions generales de prestations des services Cognisens."
+      }
+    },
+    {
+      "title": "Donnees Personnelles et IA",
+      "slug": "donnees-personnelles-et-ia",
+      "template": "templates/page-legal.php",
+      "parent": "",
+      "menu_order": 75,
+      "seo": {
+        "title": "Donnees Personnelles et IA | Cognisens",
+        "description": "Information sur l'utilisation de l'intelligence artificielle et le traitement des donnees personnelles."
+      }
+    }
+  ],
+  "menus": {
+    "primary": [
+      {"title": "Cabinet", "url": "/le-cabinet/"},
+      {"title": "Expertises", "url": "/expertise-amiable-bati-ancien/"},
+      {"title": "AMO", "url": "/amo-bati-ancien-patrimonial/"},
+      {"title": "Domaines", "url": "/expertise-pierre-pierre-de-taille/"},
+      {"title": "Pathologies", "url": "/fissures-facade-immeuble-ancien/"},
+      {"title": "Tarifs", "url": "/honoraires-tarifs-expertise-amo/"},
+      {"title": "Contact", "url": "/contact/"}
+    ]
+  }
+}

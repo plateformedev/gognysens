@@ -1,0 +1,51 @@
+# Environment files
+.env
+
+# WordPress core (will be in Docker volume)
+wordpress/wp-admin/
+wordpress/wp-includes/
+wordpress/*.php
+wordpress/license.txt
+wordpress/readme.html
+
+# Uploads
+wordpress/wp-content/uploads/
+
+# Cache
+wordpress/wp-content/cache/
+wordpress/wp-content/advanced-cache.php
+wordpress/wp-content/wp-cache-config.php
+wordpress/wp-content/object-cache.php
+
+# Backup files
+wordpress/wp-content/backup-db/
+wordpress/wp-content/backups/
+*.sql
+*.sql.gz
+
+# Debug log
+wordpress/wp-content/debug.log
+
+# System files
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node modules (if using build tools)
+node_modules/
+
+# Composer
+vendor/
+
+# Premium plugins (do not commit licenses)
+wordpress/wp-content/plugins/gravityforms/
+wordpress/wp-content/plugins/advanced-custom-fields-pro/
+wordpress/wp-content/plugins/wp-rocket/
+wordpress/wp-content/plugins/amelia/
+tmpclaude*

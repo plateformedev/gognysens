@@ -1,0 +1,75 @@
+version: '3.8'
+
+services:
+  wordpress:
+    image: wordpress:latest
+    container_name: cognisens-wp
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: ${DB_USER:-cognisens}
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD:-cognisens_password}
+      WORDPRESS_DB_NAME: ${DB_NAME:-cognisens_db}
+      WORDPRESS_DEBUG: ${WP_DEBUG:-true}
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_MEMORY_LIMIT', '256M');
+        define('WP_MAX_MEMORY_LIMIT', '512M');
+        define('DISALLOW_FILE_EDIT', true);
+        define('WP_AUTO_UPDATE_CORE', false);
+    volumes:
+      - ./wordpress/wp-content:/var/www/html/wp-content
+      - wordpress_data:/var/www/html
+    depends_on:
+      - db
+    networks:
+      - cognisens-network
+
+  db:
+    image: mysql:8.0
+    container_name: cognisens-db
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${DB_NAME:-cognisens_db}
+      MYSQL_USER: ${DB_USER:-cognisens}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-cognisens_password}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-root_password}
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - cognisens-network
+    command: '--default-authentication-plugin=mysql_native_password'
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: cognisens-pma
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      PMA_USER: ${DB_USER:-cognisens}
+      PMA_PASSWORD: ${DB_PASSWORD:-cognisens_password}
+    depends_on:
+      - db
+    networks:
+      - cognisens-network
+
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: cognisens-mail
+    restart: unless-stopped
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+    networks:
+      - cognisens-network
+
+volumes:
+  wordpress_data:
+  db_data:
+
+networks:
+  cognisens-network:
+    driver: bridge
