@@ -289,6 +289,18 @@ require_once COGNYSENS_DIR . '/inc/sitemap-config.php';
 require_once COGNYSENS_DIR . '/inc/performance.php';
 
 /**
+ * Include health check functions
+ */
+require_once COGNYSENS_DIR . '/inc/health-check.php';
+
+/**
+ * Include debug and logging (dev mode)
+ */
+if (defined('WP_DEBUG') && WP_DEBUG) {
+    require_once COGNYSENS_DIR . '/inc/debug.php';
+}
+
+/**
  * Inline critical CSS in head
  */
 function cognysens_inline_critical_css() {
