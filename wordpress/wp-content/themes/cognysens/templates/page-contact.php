@@ -10,18 +10,16 @@ get_header();
 ?>
 
 <main id="main" class="site-main page-contact">
-    <?php
-    while (have_posts()) :
-        the_post();
-        ?>
+    <?php while (have_posts()) : the_post(); ?>
+
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-            <header class="page-header">
+            <header class="page-hero">
                 <div class="container">
                     <?php cognysens_breadcrumb(); ?>
                     <?php the_title('<h1 class="page-title">', '</h1>'); ?>
-                    <p class="lead">
-                        <?php esc_html_e('Une question ? Un projet ? Contactez-nous.', 'cognysens'); ?>
+                    <p class="page-lead">
+                        Une question ? Un projet ? Contactez-nous.
                     </p>
                 </div>
             </header>
@@ -73,36 +71,41 @@ get_header();
                             } else {
                                 // Fallback form
                                 ?>
-                                <form class="cognysens-contact-form" method="post" action="">
-                                    <div class="form-group">
-                                        <label for="contact-name">Nom *</label>
-                                        <input type="text" id="contact-name" name="name" required>
+                                <form class="cognysens-form cognysens-contact-form" method="post" action="">
+                                    <?php wp_nonce_field('cognysens_contact', 'contact_nonce'); ?>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="contact-name">Nom *</label>
+                                            <input type="text" id="contact-name" name="name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="contact-email">Email *</label>
+                                            <input type="email" id="contact-email" name="email" required>
+                                        </div>
                                     </div>
 
-                                    <div class="form-group">
-                                        <label for="contact-email">Email *</label>
-                                        <input type="email" id="contact-email" name="email" required>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="contact-phone">Telephone</label>
-                                        <input type="tel" id="contact-phone" name="phone">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="contact-subject">Sujet *</label>
-                                        <select id="contact-subject" name="subject" required>
-                                            <option value="">Selectionnez</option>
-                                            <option value="expertise">Demande d'expertise</option>
-                                            <option value="amo">Demande d'AMO</option>
-                                            <option value="devis">Demande de devis</option>
-                                            <option value="autre">Autre</option>
-                                        </select>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="contact-phone">Telephone</label>
+                                            <input type="tel" id="contact-phone" name="phone">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="contact-subject">Sujet *</label>
+                                            <select id="contact-subject" name="subject" required>
+                                                <option value="">Selectionnez</option>
+                                                <option value="expertise">Demande d'expertise</option>
+                                                <option value="amo">Demande d'AMO</option>
+                                                <option value="devis">Demande de devis</option>
+                                                <option value="autre">Autre</option>
+                                            </select>
+                                        </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="contact-message">Message *</label>
-                                        <textarea id="contact-message" name="message" rows="5" required></textarea>
+                                        <textarea id="contact-message" name="message" rows="5" required
+                                            placeholder="Decrivez votre projet ou votre question..."></textarea>
                                     </div>
 
                                     <div class="form-group form-group--checkbox">
@@ -113,7 +116,7 @@ get_header();
                                         </label>
                                     </div>
 
-                                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
                                 </form>
                                 <?php
                             }
@@ -124,112 +127,16 @@ get_header();
             </section>
 
             <?php if (get_the_content()) : ?>
-            <div class="entry-content">
-                <?php the_content(); ?>
+            <div class="page-content">
+                <div class="container container--content">
+                    <?php the_content(); ?>
+                </div>
             </div>
             <?php endif; ?>
 
         </article>
-        <?php
-    endwhile;
-    ?>
+
+    <?php endwhile; ?>
 </main>
 
-<style>
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 4rem;
-}
-
-.contact-info h2,
-.contact-form h2 {
-    margin-bottom: 2rem;
-}
-
-.contact-block {
-    margin-bottom: 2rem;
-}
-
-.contact-block h3 {
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 0.75rem;
-}
-
-.contact-block address {
-    font-style: normal;
-    line-height: 1.8;
-}
-
-.contact-block ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.contact-block li {
-    margin-bottom: 0.25rem;
-}
-
-/* Form styles */
-.cognysens-contact-form .form-group {
-    margin-bottom: 1.5rem;
-}
-
-.cognysens-contact-form label {
-    display: block;
-    font-size: 0.875rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-}
-
-.cognysens-contact-form input[type="text"],
-.cognysens-contact-form input[type="email"],
-.cognysens-contact-form input[type="tel"],
-.cognysens-contact-form select,
-.cognysens-contact-form textarea {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    font-family: inherit;
-    font-size: 1rem;
-    border: 1px solid var(--color-gray-light);
-    background: var(--color-white);
-    transition: border-color 0.2s ease;
-}
-
-.cognysens-contact-form input:focus,
-.cognysens-contact-form select:focus,
-.cognysens-contact-form textarea:focus {
-    outline: none;
-    border-color: var(--color-black);
-}
-
-.form-group--checkbox {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-}
-
-.form-group--checkbox input {
-    width: auto;
-    margin-top: 0.25rem;
-}
-
-.form-group--checkbox label {
-    font-size: 0.875rem;
-    font-weight: 400;
-    margin-bottom: 0;
-}
-
-@media (max-width: 768px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-}
-</style>
-
-<?php
-get_footer();
+<?php get_footer(); ?>

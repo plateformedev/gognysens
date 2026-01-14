@@ -1857,3 +1857,311 @@ details > *:not(summary) {
         font-size: 2rem;
     }
 }
+
+/* =========================================
+   CONTACT & RDV FORMS STYLES
+   ========================================= */
+
+/* Contact Grid Layout */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--spacing-xxl);
+}
+
+.contact-info h2,
+.contact-form h2 {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-block {
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-block h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.75rem;
+    color: var(--color-gray-dark);
+}
+
+.contact-block address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+.contact-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-block li {
+    margin-bottom: 0.25rem;
+    color: var(--color-gray-dark);
+}
+
+/* Form Base Styles */
+.cognysens-form .form-group,
+.cognysens-contact-form .form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.cognysens-form label,
+.cognysens-contact-form label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--color-gray-dark);
+}
+
+.cognysens-form input[type="text"],
+.cognysens-form input[type="email"],
+.cognysens-form input[type="tel"],
+.cognysens-form input[type="date"],
+.cognysens-form input[type="time"],
+.cognysens-form select,
+.cognysens-form textarea,
+.cognysens-contact-form input[type="text"],
+.cognysens-contact-form input[type="email"],
+.cognysens-contact-form input[type="tel"],
+.cognysens-contact-form select,
+.cognysens-contact-form textarea {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    border: 1px solid var(--color-gray-light);
+    background: var(--color-white);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.cognysens-form input:focus,
+.cognysens-form select:focus,
+.cognysens-form textarea:focus,
+.cognysens-contact-form input:focus,
+.cognysens-contact-form select:focus,
+.cognysens-contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-black);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.cognysens-form select,
+.cognysens-contact-form select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 2.5rem;
+}
+
+.cognysens-form textarea,
+.cognysens-contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Form Row (multiple fields) */
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+}
+
+/* Checkbox Styles */
+.form-group--checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.form-group--checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.form-group--checkbox label {
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.form-group--checkbox a {
+    color: var(--color-black);
+    text-decoration: underline;
+}
+
+/* Radio Group */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+}
+
+.radio-option input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.radio-option label {
+    margin: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* Form Validation States */
+.cognysens-form input.is-invalid,
+.cognysens-form select.is-invalid,
+.cognysens-form textarea.is-invalid,
+.cognysens-contact-form input.is-invalid,
+.cognysens-contact-form select.is-invalid,
+.cognysens-contact-form textarea.is-invalid {
+    border-color: #dc3545;
+}
+
+.form-error {
+    color: #dc3545;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+/* Form Success Message */
+.form-success {
+    background: var(--color-stone);
+    border: 1px solid var(--color-gray-light);
+    padding: var(--spacing-lg);
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-success h3 {
+    font-family: var(--font-heading);
+    margin-bottom: 0.5rem;
+}
+
+/* RDV Page Specific */
+.rdv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xxl);
+}
+
+.rdv-info {
+    padding: var(--spacing-lg);
+    background: var(--color-stone);
+}
+
+.rdv-info h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.rdv-steps {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-lg) 0;
+    counter-reset: step;
+}
+
+.rdv-steps li {
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: var(--spacing-md);
+    counter-increment: step;
+}
+
+.rdv-steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    background: var(--color-black);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.rdv-note {
+    font-size: 0.85rem;
+    color: var(--color-gray-dark);
+    padding: var(--spacing-md);
+    background: var(--color-white);
+    border-left: 3px solid var(--color-black);
+}
+
+/* Qualification Form Sections */
+.form-section {
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--color-gray-light);
+}
+
+.form-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.form-section-title {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-md);
+}
+
+/* IA Notice */
+.ia-notice {
+    background: var(--color-stone);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    font-size: 0.85rem;
+    border-left: 3px solid var(--color-accent);
+}
+
+.ia-notice strong {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+/* Responsive Forms */
+@media (max-width: 991px) {
+    .contact-grid,
+    .rdv-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .rdv-info {
+        order: -1;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
