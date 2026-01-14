@@ -140,7 +140,7 @@ add_filter('gform_field_content', 'cognysens_gf_rgpd_field', 10, 5);
  * Validate RGPD consent on form submission
  */
 function cognysens_validate_rgpd_consent() {
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
         // Check if this is a form submission that needs RGPD validation
         if (isset($_POST['cognysens_form']) && !isset($_POST['rgpd_consent'])) {
             wp_die(
