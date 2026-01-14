@@ -1577,3 +1577,283 @@ details > *:not(summary) {
         padding: var(--spacing-sm);
     }
 }
+
+/* =========================================
+   FRONT PAGE STYLES
+   ========================================= */
+
+/* Hero Section - Premium CHANEL x APPLE */
+.hero {
+    padding: 140px 0 120px;
+    background: var(--color-white);
+    text-align: center;
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: var(--spacing-lg);
+    letter-spacing: -0.02em;
+}
+
+.hero-text {
+    font-size: 1.125rem;
+    color: var(--color-gray-dark);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-xl);
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+/* Why Section Grid */
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.why-item h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+}
+
+.why-item p {
+    color: var(--color-gray-dark);
+    line-height: 1.7;
+}
+
+/* Zone Grid - Home page */
+.zone-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+}
+
+.zone-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-lg);
+    border: 1px solid var(--color-gray-light);
+    background: var(--color-white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.zone-card:hover {
+    border-color: var(--color-black);
+    transform: translateY(-2px);
+}
+
+.zone-department {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--color-black);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.zone-name {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-gray-dark);
+}
+
+/* Tarif Preview Table */
+.tarif-preview {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tarif-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-white);
+}
+
+.tarif-table th,
+.tarif-table td {
+    padding: var(--spacing-md) var(--spacing-lg);
+    text-align: left;
+    border-bottom: 1px solid var(--color-gray-light);
+}
+
+.tarif-table th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    background: var(--color-stone);
+    color: var(--color-gray-dark);
+}
+
+.tarif-table td:last-child {
+    text-align: right;
+    font-weight: 500;
+}
+
+/* Pathologies Preview Grid */
+.pathologies-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.pathology-link {
+    display: block;
+    padding: var(--spacing-md);
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-light);
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.pathology-link:hover {
+    border-color: var(--color-black);
+    background: var(--color-stone);
+}
+
+.pathology-link span {
+    font-size: 0.9rem;
+    color: var(--color-gray-dark);
+    font-weight: 500;
+}
+
+/* Domains Preview Grid */
+.domains-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--spacing-sm);
+}
+
+.domain-tag {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-light);
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: var(--color-gray-dark);
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.domain-tag:hover {
+    background: var(--color-black);
+    border-color: var(--color-black);
+    color: var(--color-white);
+}
+
+/* CTA Section Dark */
+.section--black {
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.section--black .section-title,
+.section--black h2 {
+    color: var(--color-white);
+}
+
+.section--black p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-white {
+    background: var(--color-white);
+    color: var(--color-black);
+    border: 1px solid var(--color-white);
+}
+
+.btn-white:hover {
+    background: transparent;
+    color: var(--color-white);
+}
+
+/* Trust indicators */
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-lg);
+    text-align: center;
+    padding: var(--spacing-xl) 0;
+}
+
+.trust-item {
+    padding: var(--spacing-md);
+}
+
+.trust-number {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.trust-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-gray-dark);
+}
+
+/* Responsive Front Page */
+@media (max-width: 991px) {
+    .hero {
+        padding: 100px 0 80px;
+    }
+
+    .zone-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 80px 0 60px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .zone-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .zone-card {
+        padding: var(--spacing-md);
+    }
+
+    .zone-department {
+        font-size: 2rem;
+    }
+}

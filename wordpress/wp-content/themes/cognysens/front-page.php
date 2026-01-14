@@ -8,12 +8,12 @@
 get_header();
 ?>
 
-<main id="main" class="site-main">
+<main id="main" class="site-main page-home">
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1 class="hero-title">Expertise et AMO<br>Bati Ancien & Patrimonial</h1>
+            <h1 class="hero-title">Expertise & AMO<br>Bati Ancien</h1>
             <p class="hero-text">
                 Cabinet independant d'expertise technique et d'assistance a maitrise d'ouvrage
                 specialise dans le bati ancien et patrimonial en Ile-de-France.
@@ -25,6 +25,30 @@ get_header();
                 <a href="<?php echo esc_url(home_url('/honoraires-tarifs-expertise-amo/')); ?>" class="btn btn-outline">
                     Voir les tarifs
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="section section--stone">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-number">100%</div>
+                    <div class="trust-label">Independant</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">15+</div>
+                    <div class="trust-label">Ans d'experience</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">4</div>
+                    <div class="trust-label">Departements couverts</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">48h</div>
+                    <div class="trust-label">Delai de reponse</div>
+                </div>
             </div>
         </div>
     </section>
@@ -47,7 +71,7 @@ get_header();
                         analyser leurs causes et proposer des solutions adaptees.
                     </p>
                     <a href="<?php echo esc_url(home_url('/expertise-amiable-bati-ancien/')); ?>" class="card-link">
-                        En savoir plus &rarr;
+                        En savoir plus
                     </a>
                 </div>
 
@@ -58,7 +82,7 @@ get_header();
                         leurs travaux de renovation et de restauration.
                     </p>
                     <a href="<?php echo esc_url(home_url('/amo-copropriete-eviter-surpayer-travaux/')); ?>" class="card-link">
-                        En savoir plus &rarr;
+                        En savoir plus
                     </a>
                 </div>
 
@@ -69,15 +93,48 @@ get_header();
                         et aux enjeux patrimoniaux de votre immeuble.
                     </p>
                     <a href="<?php echo esc_url(home_url('/dtg-bati-ancien-copropriete/')); ?>" class="card-link">
-                        En savoir plus &rarr;
+                        En savoir plus
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Section -->
+    <!-- Pathologies Section -->
     <section class="section section--stone">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pathologies du bati ancien</h2>
+                <p class="section-subtitle">
+                    Expertise technique des desordres courants sur immeubles anciens et patrimoniaux.
+                </p>
+            </div>
+
+            <div class="pathologies-preview">
+                <a href="<?php echo esc_url(home_url('/fissures-facade-immeuble-ancien/')); ?>" class="pathology-link">
+                    <span>Fissures de facade</span>
+                </a>
+                <a href="<?php echo esc_url(home_url('/infiltrations-toiture-zinc-ardoise/')); ?>" class="pathology-link">
+                    <span>Infiltrations toiture</span>
+                </a>
+                <a href="<?php echo esc_url(home_url('/bois-champignons-insectes-humidite/')); ?>" class="pathology-link">
+                    <span>Champignons & insectes</span>
+                </a>
+                <a href="<?php echo esc_url(home_url('/pierre-qui-se-delite/')); ?>" class="pathology-link">
+                    <span>Degradation pierre</span>
+                </a>
+                <a href="<?php echo esc_url(home_url('/decollement-enduit-facade/')); ?>" class="pathology-link">
+                    <span>Decollement enduit</span>
+                </a>
+                <a href="<?php echo esc_url(home_url('/desordres-apres-ravalement/')); ?>" class="pathology-link">
+                    <span>Desordres apres travaux</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section class="section">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Pourquoi un expert independant ?</h2>
@@ -107,6 +164,27 @@ get_header();
                         Notre avis est strictement technique et objectif.
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domaines d'expertise -->
+    <section class="section section--stone">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Domaines d'expertise</h2>
+                <p class="section-subtitle">
+                    Specialisation dans les techniques traditionnelles du bati ancien.
+                </p>
+            </div>
+
+            <div class="domains-grid">
+                <a href="<?php echo esc_url(home_url('/expertise-pierre-pierre-de-taille/')); ?>" class="domain-tag">Pierre de taille</a>
+                <a href="<?php echo esc_url(home_url('/expertise-charpente-traditionnelle/')); ?>" class="domain-tag">Charpente</a>
+                <a href="<?php echo esc_url(home_url('/expertise-couverture-zinc-ardoise/')); ?>" class="domain-tag">Couverture zinc/ardoise</a>
+                <a href="<?php echo esc_url(home_url('/expertise-pan-de-bois-colombage/')); ?>" class="domain-tag">Pan de bois</a>
+                <a href="<?php echo esc_url(home_url('/expertise-stucs-parisiens/')); ?>" class="domain-tag">Stucs parisiens</a>
+                <a href="<?php echo esc_url(home_url('/expertise-modenatures/')); ?>" class="domain-tag">Modenatures</a>
             </div>
         </div>
     </section>
@@ -182,8 +260,8 @@ get_header();
                 </table>
             </div>
 
-            <div class="text-center" style="margin-top: 2rem;">
-                <a href="<?php echo esc_url(home_url('/honoraires-tarifs-expertise-amo/')); ?>" class="btn btn-primary">
+            <div class="text-center" style="margin-top: var(--spacing-lg);">
+                <a href="<?php echo esc_url(home_url('/honoraires-tarifs-expertise-amo/')); ?>" class="btn btn-outline">
                     Tous nos tarifs
                 </a>
             </div>
@@ -194,8 +272,8 @@ get_header();
     <section class="section section--black">
         <div class="container">
             <div class="cta-content text-center">
-                <h2 style="color: white;">Besoin d'un avis d'expert ?</h2>
-                <p style="color: rgba(255,255,255,0.8); max-width: 500px; margin: 0 auto 2rem;">
+                <h2>Besoin d'un avis d'expert ?</h2>
+                <p style="max-width: 500px; margin: 0 auto var(--spacing-lg);">
                     Prenez rendez-vous pour un premier echange gratuit de 15 minutes
                     afin d'evaluer votre situation.
                 </p>
@@ -207,102 +285,6 @@ get_header();
     </section>
 
 </main>
-
-<style>
-/* Front page specific styles */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.card-link {
-    font-size: 0.875rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.why-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 3rem;
-}
-
-.why-item h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-}
-
-.why-item p {
-    color: var(--color-gray-medium);
-}
-
-.zone-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-}
-
-.zone-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    border: 1px solid var(--color-gray-light);
-    background: var(--color-white);
-    transition: all 0.3s ease;
-}
-
-.zone-card:hover {
-    border-color: var(--color-black);
-}
-
-.zone-department {
-    font-family: var(--font-heading);
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: var(--color-black);
-    line-height: 1;
-    margin-bottom: 0.5rem;
-}
-
-.zone-name {
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--color-gray-medium);
-}
-
-.tarif-table {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-    border-collapse: collapse;
-    background: var(--color-white);
-}
-
-.tarif-table th,
-.tarif-table td {
-    padding: 1rem 1.5rem;
-    text-align: left;
-    border-bottom: 1px solid var(--color-gray-light);
-}
-
-.tarif-table th {
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 0.875rem;
-    letter-spacing: 0.05em;
-    background: var(--color-gray-lighter);
-}
-
-@media (max-width: 768px) {
-    .zone-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-</style>
 
 <?php
 get_footer();
