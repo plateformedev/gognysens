@@ -32,12 +32,12 @@ function cognysens_log($message, $level = 'info') {
 }
 
 /**
- * Log form submissions for debugging
+ * Log form submissions for debugging (debug mode only)
  *
  * @param array  $data      Form data (sanitized)
  * @param string $form_type Form type identifier
  */
-function cognysens_log_form_submission($data, $form_type = 'contact') {
+function cognysens_debug_form_submission($data, $form_type = 'contact') {
     if (!WP_DEBUG) {
         return;
     }
