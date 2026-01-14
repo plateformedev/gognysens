@@ -282,3 +282,21 @@ require_once COGNYSENS_DIR . '/inc/cookie-banner.php';
  * Include sitemap configuration
  */
 require_once COGNYSENS_DIR . '/inc/sitemap-config.php';
+
+/**
+ * Include performance optimizations
+ */
+require_once COGNYSENS_DIR . '/inc/performance.php';
+
+/**
+ * Inline critical CSS in head
+ */
+function cognysens_inline_critical_css() {
+    $critical_css_file = COGNYSENS_DIR . '/assets/css/critical.css';
+    if (file_exists($critical_css_file)) {
+        echo '<style id="critical-css">';
+        echo file_get_contents($critical_css_file);
+        echo '</style>' . "\n";
+    }
+}
+add_action('wp_head', 'cognysens_inline_critical_css', 1);
