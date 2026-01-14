@@ -1,8 +1,8 @@
-# Structure des Pages COGNISENS
+# Structure des Pages COGNYSENS
 
 ## Vue d'ensemble
 
-Le site COGNISENS compte 53+ pages organisees en 8 sections principales.
+Le site COGNYSENS compte 53+ pages organisees en 8 sections principales.
 
 ## Arborescence
 
@@ -123,7 +123,7 @@ Les pages d'expertise et AMO ont un Schema.org `Service` avec :
 - Nom du service
 - Description
 - Zone d'intervention
-- Fournisseur (Cognisens)
+- Fournisseur (Cognysens)
 
 ### Pages Tarifs
 

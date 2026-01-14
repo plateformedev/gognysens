@@ -7,8 +7,8 @@
       "parent": "",
       "menu_order": 1,
       "seo": {
-        "title": "Le Cabinet Cognisens | Expert Bati Ancien & AMO",
-        "description": "Decouvrez Cognisens, cabinet independant d'expertise et d'AMO specialise dans le bati ancien et patrimonial en Ile-de-France."
+        "title": "Le Cabinet Cognysens | Expert Bati Ancien & AMO",
+        "description": "Decouvrez Cognysens, cabinet independant d'expertise et d'AMO specialise dans le bati ancien et patrimonial en Ile-de-France."
       }
     },
     {
@@ -18,8 +18,8 @@
       "parent": "le-cabinet",
       "menu_order": 2,
       "seo": {
-        "title": "Notre Equipe | Cognisens Expert Bati Ancien",
-        "description": "Rencontrez l'equipe Cognisens : experts en bati ancien, pathologies du batiment et assistance a maitrise d'ouvrage."
+        "title": "Notre Equipe | Cognysens Expert Bati Ancien",
+        "description": "Rencontrez l'equipe Cognysens : experts en bati ancien, pathologies du batiment et assistance a maitrise d'ouvrage."
       }
     },
     {
@@ -29,8 +29,8 @@
       "parent": "le-cabinet",
       "menu_order": 3,
       "seo": {
-        "title": "Notre Methodologie d'Expertise | Cognisens",
-        "description": "Decouvrez la methodologie rigoureuse de Cognisens pour l'expertise du bati ancien et l'accompagnement de vos projets."
+        "title": "Notre Methodologie d'Expertise | Cognysens",
+        "description": "Decouvrez la methodologie rigoureuse de Cognysens pour l'expertise du bati ancien et l'accompagnement de vos projets."
       }
     },
     {
@@ -40,7 +40,7 @@
       "parent": "le-cabinet",
       "menu_order": 4,
       "seo": {
-        "title": "Independance et Deontologie | Cognisens",
+        "title": "Independance et Deontologie | Cognysens",
         "description": "Notre engagement d'independance : aucun lien avec les entreprises de travaux, avis strictement technique et objectif."
       }
     },
@@ -51,7 +51,7 @@
       "parent": "le-cabinet",
       "menu_order": 5,
       "seo": {
-        "title": "Cadre Juridique de l'Expertise | Cognisens",
+        "title": "Cadre Juridique de l'Expertise | Cognysens",
         "description": "Comprendre le cadre juridique de l'expertise en batiment et de l'assistance a maitrise d'ouvrage."
       }
     },
@@ -62,8 +62,8 @@
       "parent": "le-cabinet",
       "menu_order": 6,
       "seo": {
-        "title": "Zone d'Intervention | Paris, 92, 94, 78 | Cognisens",
-        "description": "Cognisens intervient a Paris et en Ile-de-France : Hauts-de-Seine (92), Val-de-Marne (94), Yvelines (78)."
+        "title": "Zone d'Intervention | Paris, 92, 94, 78 | Cognysens",
+        "description": "Cognysens intervient a Paris et en Ile-de-France : Hauts-de-Seine (92), Val-de-Marne (94), Yvelines (78)."
       }
     },
     {
@@ -73,7 +73,7 @@
       "parent": "zone-intervention",
       "menu_order": 1,
       "seo": {
-        "title": "Expert Bati Ancien Paris 75 | Expertise & AMO | Cognisens",
+        "title": "Expert Bati Ancien Paris 75 | Expertise & AMO | Cognysens",
         "description": "Expert en bati ancien a Paris (75). Expertise technique, DTG, AMO pour immeubles parisiens et patrimoine haussmannien."
       }
     },
@@ -84,7 +84,7 @@
       "parent": "zone-intervention",
       "menu_order": 2,
       "seo": {
-        "title": "Expert Bati Ancien Hauts-de-Seine 92 | Cognisens",
+        "title": "Expert Bati Ancien Hauts-de-Seine 92 | Cognysens",
         "description": "Expert bati ancien dans les Hauts-de-Seine (92). Expertise, diagnostic et AMO pour coproprietes et particuliers."
       }
     },
@@ -95,7 +95,7 @@
       "parent": "zone-intervention",
       "menu_order": 3,
       "seo": {
-        "title": "Expert Bati Ancien Val-de-Marne 94 | Cognisens",
+        "title": "Expert Bati Ancien Val-de-Marne 94 | Cognysens",
         "description": "Expert bati ancien dans le Val-de-Marne (94). Expertise technique et AMO pour votre patrimoine immobilier."
       }
     },
@@ -106,7 +106,7 @@
       "parent": "zone-intervention",
       "menu_order": 4,
       "seo": {
-        "title": "Expert Bati Ancien Yvelines 78 | Cognisens",
+        "title": "Expert Bati Ancien Yvelines 78 | Cognysens",
         "description": "Expert bati ancien dans les Yvelines (78). Expertise et AMO a Versailles, Saint-Germain, et environs."
       }
     },
@@ -117,7 +117,7 @@
       "parent": "",
       "menu_order": 10,
       "seo": {
-        "title": "Expertise Amiable Bati Ancien | Diagnostic Independant | Cognisens",
+        "title": "Expertise Amiable Bati Ancien | Diagnostic Independant | Cognysens",
         "description": "Expertise amiable pour bati ancien : diagnostic technique independant, analyse des desordres, rapport d'expertise detaille."
       }
     },
@@ -128,7 +128,7 @@
       "parent": "",
       "menu_order": 11,
       "seo": {
-        "title": "Assistance Expertise Judiciaire | Bati Patrimonial | Cognisens",
+        "title": "Assistance Expertise Judiciaire | Bati Patrimonial | Cognysens",
         "description": "Assistance technique lors d'expertises judiciaires sur bati ancien et patrimonial. Accompagnement expert."
       }
     },
@@ -139,7 +139,7 @@
       "parent": "",
       "menu_order": 12,
       "seo": {
-        "title": "DTG Bati Ancien | Diagnostic Technique Global Copropriete | Cognisens",
+        "title": "DTG Bati Ancien | Diagnostic Technique Global Copropriete | Cognysens",
         "description": "DTG adapte au bati ancien pour coproprietes. Diagnostic technique global specialise patrimoine immobilier."
       }
     },
@@ -150,7 +150,7 @@
       "parent": "",
       "menu_order": 13,
       "seo": {
-        "title": "Expertise Fissures Facade | Bati Ancien | Cognisens",
+        "title": "Expertise Fissures Facade | Bati Ancien | Cognysens",
         "description": "Expertise des fissures de facade sur bati ancien. Analyse des causes, preconisations de traitement."
       }
     },
@@ -161,7 +161,7 @@
       "parent": "",
       "menu_order": 14,
       "seo": {
-        "title": "Expertise Ravalement Parisien | Immeuble Haussmannien | Cognisens",
+        "title": "Expertise Ravalement Parisien | Immeuble Haussmannien | Cognysens",
         "description": "Expertise avant ravalement d'immeuble parisien. Analyse technique pour eviter les malfacons."
       }
     },
@@ -172,7 +172,7 @@
       "parent": "",
       "menu_order": 15,
       "seo": {
-        "title": "Expertise Pathologies Bois | Charpente, Plancher | Cognisens",
+        "title": "Expertise Pathologies Bois | Charpente, Plancher | Cognysens",
         "description": "Expertise des pathologies du bois en bati ancien : champignons, insectes xylophages, humidite."
       }
     },
@@ -183,7 +183,7 @@
       "parent": "",
       "menu_order": 20,
       "seo": {
-        "title": "AMO Bati Ancien et Patrimonial | Assistance Maitrise Ouvrage | Cognisens",
+        "title": "AMO Bati Ancien et Patrimonial | Assistance Maitrise Ouvrage | Cognysens",
         "description": "Assistance a Maitrise d'Ouvrage specialisee bati ancien. Accompagnement technique de vos projets patrimoniaux."
       }
     },
@@ -194,7 +194,7 @@
       "parent": "",
       "menu_order": 21,
       "seo": {
-        "title": "AMO Copropriete | Eviter de Surpayer vos Travaux | Cognisens",
+        "title": "AMO Copropriete | Eviter de Surpayer vos Travaux | Cognysens",
         "description": "AMO pour coproprietes : evitez de surpayer vos travaux. Analyse des devis, negociation, suivi de chantier."
       }
     },
@@ -205,7 +205,7 @@
       "parent": "",
       "menu_order": 22,
       "seo": {
-        "title": "AMO Fonciere Patrimoniale | Cognisens",
+        "title": "AMO Fonciere Patrimoniale | Cognysens",
         "description": "Assistance a Maitrise d'Ouvrage pour foncieres patrimoniales. Gestion technique de votre patrimoine immobilier."
       }
     },
@@ -216,7 +216,7 @@
       "parent": "",
       "menu_order": 23,
       "seo": {
-        "title": "AMO Particulier | Renovation Bati Ancien | Cognisens",
+        "title": "AMO Particulier | Renovation Bati Ancien | Cognysens",
         "description": "AMO pour particuliers en bati ancien. Accompagnement personnalise pour votre projet de renovation."
       }
     },
@@ -227,7 +227,7 @@
       "parent": "",
       "menu_order": 24,
       "seo": {
-        "title": "AMO Indivision et SCI | Bati Ancien | Cognisens",
+        "title": "AMO Indivision et SCI | Bati Ancien | Cognysens",
         "description": "AMO pour indivisions et SCI en bati ancien. Conseil technique neutre pour decisions collectives."
       }
     },
@@ -238,7 +238,7 @@
       "parent": "",
       "menu_order": 25,
       "seo": {
-        "title": "AMO Apres Expertise | Mise en Oeuvre Preconisations | Cognisens",
+        "title": "AMO Apres Expertise | Mise en Oeuvre Preconisations | Cognysens",
         "description": "Accompagnement AMO apres expertise pour la mise en oeuvre des preconisations techniques."
       }
     },
@@ -249,7 +249,7 @@
       "parent": "",
       "menu_order": 30,
       "seo": {
-        "title": "Expertise Pierre de Taille | Facade, Moellon | Cognisens",
+        "title": "Expertise Pierre de Taille | Facade, Moellon | Cognysens",
         "description": "Expertise des ouvrages en pierre : pierre de taille, moellon, pathologies, restauration."
       }
     },
@@ -260,7 +260,7 @@
       "parent": "",
       "menu_order": 31,
       "seo": {
-        "title": "Expertise Sculpture Pierre | Elements Decoratifs | Cognisens",
+        "title": "Expertise Sculpture Pierre | Elements Decoratifs | Cognysens",
         "description": "Expertise des sculptures et elements decoratifs en pierre. Evaluation etat, preconisations conservation."
       }
     },
@@ -271,7 +271,7 @@
       "parent": "",
       "menu_order": 32,
       "seo": {
-        "title": "Expertise Pan de Bois et Colombage | Cognisens",
+        "title": "Expertise Pan de Bois et Colombage | Cognysens",
         "description": "Expertise des constructions a pan de bois et colombage. Diagnostic structurel et pathologies."
       }
     },
@@ -282,7 +282,7 @@
       "parent": "",
       "menu_order": 33,
       "seo": {
-        "title": "Expertise Charpente Traditionnelle | Bois Ancien | Cognisens",
+        "title": "Expertise Charpente Traditionnelle | Bois Ancien | Cognysens",
         "description": "Expertise des charpentes traditionnelles en bois. Diagnostic structurel, pathologies, preconisations."
       }
     },
@@ -293,7 +293,7 @@
       "parent": "",
       "menu_order": 34,
       "seo": {
-        "title": "Expertise Couverture Zinc et Ardoise | Toiture | Cognisens",
+        "title": "Expertise Couverture Zinc et Ardoise | Toiture | Cognysens",
         "description": "Expertise des couvertures en zinc et ardoise. Diagnostic toiture, infiltrations, vetuste."
       }
     },
@@ -304,7 +304,7 @@
       "parent": "",
       "menu_order": 35,
       "seo": {
-        "title": "Expertise Zinguerie Patrimoniale | Ornements Zinc | Cognisens",
+        "title": "Expertise Zinguerie Patrimoniale | Ornements Zinc | Cognysens",
         "description": "Expertise de la zinguerie patrimoniale : ornements, evacuations, elements decoratifs en zinc."
       }
     },
@@ -315,7 +315,7 @@
       "parent": "",
       "menu_order": 36,
       "seo": {
-        "title": "Expertise Stucs Parisiens | Decoration Interieure | Cognisens",
+        "title": "Expertise Stucs Parisiens | Decoration Interieure | Cognysens",
         "description": "Expertise des stucs parisiens et decorations interieures. Moulures, corniches, rosaces."
       }
     },
@@ -326,7 +326,7 @@
       "parent": "",
       "menu_order": 37,
       "seo": {
-        "title": "Expertise Modenatures | Elements Architecturaux | Cognisens",
+        "title": "Expertise Modenatures | Elements Architecturaux | Cognysens",
         "description": "Expertise des modenatures et elements architecturaux de facade. Corniches, bandeaux, encadrements."
       }
     },
@@ -337,7 +337,7 @@
       "parent": "",
       "menu_order": 40,
       "seo": {
-        "title": "Fissures Facade Immeuble Ancien | Causes et Solutions | Cognisens",
+        "title": "Fissures Facade Immeuble Ancien | Causes et Solutions | Cognysens",
         "description": "Comprendre les fissures de facade en immeuble ancien. Causes, gravite, solutions de traitement."
       }
     },
@@ -348,7 +348,7 @@
       "parent": "",
       "menu_order": 41,
       "seo": {
-        "title": "Infiltrations Toiture Zinc Ardoise | Diagnostic | Cognisens",
+        "title": "Infiltrations Toiture Zinc Ardoise | Diagnostic | Cognysens",
         "description": "Infiltrations par la toiture zinc ou ardoise. Diagnostic des causes et solutions de reparation."
       }
     },
@@ -359,7 +359,7 @@
       "parent": "",
       "menu_order": 42,
       "seo": {
-        "title": "Pathologies Bois | Champignons, Insectes, Humidite | Cognisens",
+        "title": "Pathologies Bois | Champignons, Insectes, Humidite | Cognysens",
         "description": "Pathologies du bois en batiment ancien : merule, vrillettes, capricornes, humidite. Diagnostic et traitement."
       }
     },
@@ -370,7 +370,7 @@
       "parent": "",
       "menu_order": 43,
       "seo": {
-        "title": "Pierre qui se Delite | Desagregation, Erosion | Cognisens",
+        "title": "Pierre qui se Delite | Desagregation, Erosion | Cognysens",
         "description": "Pierre de facade qui se delite, s'effrite ou s'erode. Causes et solutions de restauration."
       }
     },
@@ -381,7 +381,7 @@
       "parent": "",
       "menu_order": 44,
       "seo": {
-        "title": "Decollement Enduit Facade | Causes et Reparation | Cognisens",
+        "title": "Decollement Enduit Facade | Causes et Reparation | Cognysens",
         "description": "Enduit de facade qui se decolle ou cloque. Analyse des causes et solutions de reparation."
       }
     },
@@ -392,7 +392,7 @@
       "parent": "",
       "menu_order": 45,
       "seo": {
-        "title": "Desordres Apres Ravalement | Malfacons | Cognisens",
+        "title": "Desordres Apres Ravalement | Malfacons | Cognysens",
         "description": "Desordres apparus apres un ravalement de facade. Expertise des malfacons et recours possibles."
       }
     },
@@ -403,7 +403,7 @@
       "parent": "",
       "menu_order": 46,
       "seo": {
-        "title": "Deformations Structurelles | Bati Ancien | Cognisens",
+        "title": "Deformations Structurelles | Bati Ancien | Cognysens",
         "description": "Deformations structurelles en bati ancien : affaissement, basculement, tassement. Diagnostic et solutions."
       }
     },
@@ -414,7 +414,7 @@
       "parent": "",
       "menu_order": 50,
       "seo": {
-        "title": "Tarifs Expertise et AMO | Honoraires | Cognisens",
+        "title": "Tarifs Expertise et AMO | Honoraires | Cognysens",
         "description": "Tarifs transparents pour nos prestations d'expertise et d'AMO. Honoraires clairs, devis personnalise."
       }
     },
@@ -425,7 +425,7 @@
       "parent": "honoraires-tarifs-expertise-amo",
       "menu_order": 51,
       "seo": {
-        "title": "Prix Expertise Fissure Facade | Tarif | Cognisens",
+        "title": "Prix Expertise Fissure Facade | Tarif | Cognysens",
         "description": "Combien coute une expertise de fissures de facade ? Tarifs indicatifs et facteurs de variation."
       }
     },
@@ -436,7 +436,7 @@
       "parent": "honoraires-tarifs-expertise-amo",
       "menu_order": 52,
       "seo": {
-        "title": "Prix DTG Bati Ancien | Tarif Diagnostic | Cognisens",
+        "title": "Prix DTG Bati Ancien | Tarif Diagnostic | Cognysens",
         "description": "Combien coute un DTG pour copropriete en bati ancien ? Tarifs et facteurs de variation."
       }
     },
@@ -447,7 +447,7 @@
       "parent": "honoraires-tarifs-expertise-amo",
       "menu_order": 53,
       "seo": {
-        "title": "Prix Assistance Expertise Judiciaire | Tarif | Cognisens",
+        "title": "Prix Assistance Expertise Judiciaire | Tarif | Cognysens",
         "description": "Tarifs de l'assistance technique lors d'une expertise judiciaire en batiment."
       }
     },
@@ -458,7 +458,7 @@
       "parent": "honoraires-tarifs-expertise-amo",
       "menu_order": 54,
       "seo": {
-        "title": "Prix AMO Copropriete | Tarif Assistance | Cognisens",
+        "title": "Prix AMO Copropriete | Tarif Assistance | Cognysens",
         "description": "Combien coute une AMO pour copropriete ? Honoraires en pourcentage ou forfait."
       }
     },
@@ -469,7 +469,7 @@
       "parent": "honoraires-tarifs-expertise-amo",
       "menu_order": 55,
       "seo": {
-        "title": "Prix Ravalement Parisien | Cout Travaux | Cognisens",
+        "title": "Prix Ravalement Parisien | Cout Travaux | Cognysens",
         "description": "Estimation du cout des travaux de ravalement d'un immeuble parisien. Prix au m2, facteurs de variation."
       }
     },
@@ -480,7 +480,7 @@
       "parent": "honoraires-tarifs-expertise-amo",
       "menu_order": 56,
       "seo": {
-        "title": "Prix Travaux Charpente Ancienne | Cout | Cognisens",
+        "title": "Prix Travaux Charpente Ancienne | Cout | Cognysens",
         "description": "Estimation du cout des travaux de charpente ancienne. Reparation, remplacement, traitement."
       }
     },
@@ -491,8 +491,8 @@
       "parent": "",
       "menu_order": 60,
       "seo": {
-        "title": "Contact | Cognisens Expert Bati Ancien",
-        "description": "Contactez Cognisens pour vos projets d'expertise et d'AMO en bati ancien. Formulaire et coordonnees."
+        "title": "Contact | Cognysens Expert Bati Ancien",
+        "description": "Contactez Cognysens pour vos projets d'expertise et d'AMO en bati ancien. Formulaire et coordonnees."
       }
     },
     {
@@ -502,8 +502,8 @@
       "parent": "",
       "menu_order": 61,
       "seo": {
-        "title": "Prendre Rendez-vous | Cognisens",
-        "description": "Prenez rendez-vous avec un expert Cognisens. Premier echange gratuit de 15 minutes."
+        "title": "Prendre Rendez-vous | Cognysens",
+        "description": "Prenez rendez-vous avec un expert Cognysens. Premier echange gratuit de 15 minutes."
       }
     },
     {
@@ -513,8 +513,8 @@
       "parent": "",
       "menu_order": 70,
       "seo": {
-        "title": "Mentions Legales | Cognisens",
-        "description": "Mentions legales du site Cognisens. Editeur, hebergement, propriete intellectuelle."
+        "title": "Mentions Legales | Cognysens",
+        "description": "Mentions legales du site Cognysens. Editeur, hebergement, propriete intellectuelle."
       }
     },
     {
@@ -524,7 +524,7 @@
       "parent": "",
       "menu_order": 71,
       "seo": {
-        "title": "Politique de Confidentialite | RGPD | Cognisens",
+        "title": "Politique de Confidentialite | RGPD | Cognysens",
         "description": "Politique de confidentialite et protection des donnees personnelles. Conformite RGPD."
       }
     },
@@ -535,8 +535,8 @@
       "parent": "",
       "menu_order": 72,
       "seo": {
-        "title": "Politique Cookies | Cognisens",
-        "description": "Politique d'utilisation des cookies sur le site Cognisens. Gestion des preferences."
+        "title": "Politique Cookies | Cognysens",
+        "description": "Politique d'utilisation des cookies sur le site Cognysens. Gestion des preferences."
       }
     },
     {
@@ -546,8 +546,8 @@
       "parent": "",
       "menu_order": 73,
       "seo": {
-        "title": "CGU | Conditions Generales d'Utilisation | Cognisens",
-        "description": "Conditions generales d'utilisation du site Cognisens."
+        "title": "CGU | Conditions Generales d'Utilisation | Cognysens",
+        "description": "Conditions generales d'utilisation du site Cognysens."
       }
     },
     {
@@ -557,8 +557,8 @@
       "parent": "",
       "menu_order": 74,
       "seo": {
-        "title": "CGP | Conditions Generales de Prestations | Cognisens",
-        "description": "Conditions generales de prestations des services Cognisens."
+        "title": "CGP | Conditions Generales de Prestations | Cognysens",
+        "description": "Conditions generales de prestations des services Cognysens."
       }
     },
     {
@@ -568,7 +568,7 @@
       "parent": "",
       "menu_order": 75,
       "seo": {
-        "title": "Donnees Personnelles et IA | Cognisens",
+        "title": "Donnees Personnelles et IA | Cognysens",
         "description": "Information sur l'utilisation de l'intelligence artificielle et le traitement des donnees personnelles."
       }
     }

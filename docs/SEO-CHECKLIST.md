@@ -1,4 +1,4 @@
-# Checklist SEO COGNISENS
+# Checklist SEO COGNYSENS
 
 ## 1. SEO Technique
 

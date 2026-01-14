@@ -1,11 +1,11 @@
 <?php
 /**
- * COGNISENS - Content Import Script
+ * COGNYSENS - Content Import Script
  *
  * Run this script from WP-CLI or directly in WordPress
  * Usage: wp eval-file scripts/import-content.php
  *
- * @package Cognisens
+ * @package Cognysens
  */
 
 // Exit if accessed directly
@@ -32,7 +32,7 @@ if (!defined('ABSPATH')) {
 /**
  * Import pages from JSON file
  */
-function cognisens_import_pages() {
+function cognysens_import_pages() {
     $json_file = __DIR__ . '/seed-pages.json';
 
     if (!file_exists($json_file)) {
@@ -98,8 +98,8 @@ function cognisens_import_pages() {
                 update_post_meta($post_id, 'rank_math_description', $page_data['seo']['description']);
             }
             // Fallback: store as custom meta
-            update_post_meta($post_id, '_cognisens_seo_title', $page_data['seo']['title']);
-            update_post_meta($post_id, '_cognisens_seo_description', $page_data['seo']['description']);
+            update_post_meta($post_id, '_cognysens_seo_title', $page_data['seo']['title']);
+            update_post_meta($post_id, '_cognysens_seo_description', $page_data['seo']['description']);
         }
 
         $created++;
@@ -128,7 +128,7 @@ function cognisens_import_pages() {
 
     // Create menus
     if (!empty($data['menus'])) {
-        cognisens_create_menus($data['menus'], $parent_map);
+        cognysens_create_menus($data['menus'], $parent_map);
     }
 
     if (defined('WP_CLI')) {
@@ -145,7 +145,7 @@ function cognisens_import_pages() {
 /**
  * Create navigation menus
  */
-function cognisens_create_menus($menus, $parent_map) {
+function cognysens_create_menus($menus, $parent_map) {
     foreach ($menus as $location => $items) {
         $menu_name = 'Menu ' . ucfirst($location);
         $menu_id = wp_create_nav_menu($menu_name);
@@ -196,7 +196,7 @@ function cognisens_create_menus($menus, $parent_map) {
 /**
  * Set up homepage
  */
-function cognisens_setup_homepage() {
+function cognysens_setup_homepage() {
     $front_page = get_page_by_path('home');
 
     if (!$front_page) {
@@ -222,14 +222,14 @@ function cognisens_setup_homepage() {
 
 // Run import
 if (defined('WP_CLI') && WP_CLI) {
-    cognisens_import_pages();
-    cognisens_setup_homepage();
+    cognysens_import_pages();
+    cognysens_setup_homepage();
 } elseif (current_user_can('manage_options')) {
     // Allow running from admin if logged in
     add_action('admin_init', function() {
-        if (isset($_GET['cognisens_import']) && wp_verify_nonce($_GET['_wpnonce'], 'cognisens_import')) {
-            $result = cognisens_import_pages();
-            cognisens_setup_homepage();
+        if (isset($_GET['cognysens_import']) && wp_verify_nonce($_GET['_wpnonce'], 'cognysens_import')) {
+            $result = cognysens_import_pages();
+            cognysens_setup_homepage();
             wp_die('Import complete: ' . print_r($result, true));
         }
     });

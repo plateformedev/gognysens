@@ -1,4 +1,4 @@
-# Installation COGNISENS
+# Installation COGNYSENS
 
 ## Prerequis
 
@@ -41,19 +41,19 @@ docker-compose up -d
 
 1. Suivre l'assistant d'installation WordPress
 2. Creer un compte administrateur
-3. Activer le theme "Cognisens"
-4. Activer le plugin "Cognisens Core"
+3. Activer le theme "Cognysens"
+4. Activer le plugin "Cognysens Core"
 
 ### 6. Importer le contenu
 
 Via WP-CLI (dans le conteneur) :
 
 ```bash
-docker exec -it cognisens-wp wp eval-file /var/www/html/wp-content/scripts/import-content.php
+docker exec -it cognysens-wp wp eval-file /var/www/html/wp-content/scripts/import-content.php
 ```
 
 Ou via l'interface admin :
-1. Aller dans Cognisens > Import
+1. Aller dans Cognysens > Import
 2. Lancer l'import des pages
 
 ## Plugins a installer
@@ -100,7 +100,7 @@ Aller dans Reglages > Permaliens et selectionner "Nom de l'article".
 ### 1. Export de la base
 
 ```bash
-docker exec cognisens-db mysqldump -u root -p cognisens_db > backup.sql
+docker exec cognysens-db mysqldump -u root -p cognysens_db > backup.sql
 ```
 
 ### 2. Modification des URLs
@@ -108,7 +108,7 @@ docker exec cognisens-db mysqldump -u root -p cognisens_db > backup.sql
 Utiliser WP-CLI :
 
 ```bash
-wp search-replace 'http://localhost:8080' 'https://cognisens.fr' --all-tables
+wp search-replace 'http://localhost:8080' 'https://cognysens.fr' --all-tables
 ```
 
 ### 3. Configuration serveur
@@ -128,10 +128,10 @@ docker-compose restart
 docker-compose logs -f wordpress
 
 # Acceder au conteneur WordPress
-docker exec -it cognisens-wp bash
+docker exec -it cognysens-wp bash
 
 # WP-CLI
-docker exec -it cognisens-wp wp --info
+docker exec -it cognysens-wp wp --info
 
 # Arreter les conteneurs
 docker-compose down
@@ -154,7 +154,7 @@ docker-compose down -v
 
 ### Le theme n'apparait pas
 
-1. Verifier les permissions : `chmod -R 755 wordpress/wp-content/themes/cognisens`
+1. Verifier les permissions : `chmod -R 755 wordpress/wp-content/themes/cognysens`
 2. Desactiver le cache si active
 
 ## Support

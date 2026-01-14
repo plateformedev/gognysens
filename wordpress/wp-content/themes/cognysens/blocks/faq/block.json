@@ -1,0 +1,16 @@
+{
+  "name": "acf/cognysens-faq",
+  "title": "FAQ Cognysens",
+  "description": "Bloc FAQ avec Schema.org integre",
+  "category": "cognysens",
+  "icon": "editor-help",
+  "keywords": ["faq", "questions", "schema"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "blocks/faq/faq.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": true
+  }
+}

@@ -5,7 +5,7 @@
  * Run via WP-CLI: wp eval-file scripts/setup-menus.php
  * Or include in import-content.php
  *
- * @package Cognisens
+ * @package Cognysens
  */
 
 if (!defined('ABSPATH')) {
@@ -23,7 +23,7 @@ if (!defined('ABSPATH')) {
  * Structure: Cabinet | Expertise | AMO | Pathologies | Tarifs | Contact
  * (Rendez-vous is already a CTA button in header)
  */
-function cognisens_setup_primary_menu() {
+function cognysens_setup_primary_menu() {
     // Delete existing menu if exists
     $menu_name = 'Menu Principal';
     $menu_exists = wp_get_nav_menu_object($menu_name);
@@ -151,7 +151,7 @@ function cognisens_setup_primary_menu() {
 /**
  * Create Footer Menu
  */
-function cognisens_setup_footer_menu() {
+function cognysens_setup_footer_menu() {
     $menu_name = 'Menu Footer';
     $menu_exists = wp_get_nav_menu_object($menu_name);
 
@@ -195,7 +195,7 @@ function cognisens_setup_footer_menu() {
 /**
  * Create Legal Menu
  */
-function cognisens_setup_legal_menu() {
+function cognysens_setup_legal_menu() {
     $menu_name = 'Liens Legaux';
     $menu_exists = wp_get_nav_menu_object($menu_name);
 
@@ -238,10 +238,10 @@ function cognisens_setup_legal_menu() {
 }
 
 // Run setup
-echo "=== Setting up COGNISENS Menus ===\n\n";
+echo "=== Setting up COGNYSENS Menus ===\n\n";
 
-cognisens_setup_primary_menu();
-cognisens_setup_footer_menu();
-cognisens_setup_legal_menu();
+cognysens_setup_primary_menu();
+cognysens_setup_footer_menu();
+cognysens_setup_legal_menu();
 
 echo "\n=== Menu setup complete ===\n";

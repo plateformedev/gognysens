@@ -1,11 +1,11 @@
 <?php
 /**
- * COGNISENS - Page Content Import Script
+ * COGNYSENS - Page Content Import Script
  *
  * Imports content from content/*.json files to existing pages
  * Run via WP-CLI: wp eval-file scripts/import-page-content.php
  *
- * @package Cognisens
+ * @package Cognysens
  */
 
 // Exit if accessed directly
@@ -31,7 +31,7 @@ if (!defined('ABSPATH')) {
 /**
  * Import page content from JSON files
  */
-function cognisens_import_page_content() {
+function cognysens_import_page_content() {
     $content_dir = __DIR__ . '/../content/';
     $content_files = glob($content_dir . 'pages-*.json');
 
@@ -76,7 +76,7 @@ function cognisens_import_page_content() {
 
             if (!$page) {
                 // Try to create the page
-                $result = cognisens_create_page_with_content($page_data);
+                $result = cognysens_create_page_with_content($page_data);
                 if ($result) {
                     $updated++;
                     if (defined('WP_CLI')) {
@@ -125,7 +125,7 @@ function cognisens_import_page_content() {
 /**
  * Create a page with content
  */
-function cognisens_create_page_with_content($page_data) {
+function cognysens_create_page_with_content($page_data) {
     $slug = $page_data['slug'];
     $content = $page_data['content'] ?? '';
 
@@ -162,7 +162,7 @@ function cognisens_create_page_with_content($page_data) {
 /**
  * Import only legal pages
  */
-function cognisens_import_legal_pages() {
+function cognysens_import_legal_pages() {
     $file = __DIR__ . '/../content/pages-legales.json';
 
     if (!file_exists($file)) {
@@ -227,8 +227,8 @@ function cognisens_import_legal_pages() {
 if (defined('WP_CLI') && WP_CLI) {
     // Check for --legal-only flag
     if (in_array('--legal-only', $GLOBALS['argv'] ?? array())) {
-        cognisens_import_legal_pages();
+        cognysens_import_legal_pages();
     } else {
-        cognisens_import_page_content();
+        cognysens_import_page_content();
     }
 }

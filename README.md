@@ -1,4 +1,4 @@
-# COGNISENS - Site WordPress
+# COGNYSENS - Site WordPress
 
 Cabinet d'expertise et d'assistance a maitrise d'ouvrage (AMO) specialise dans le bati ancien et patrimonial.
 
@@ -33,7 +33,7 @@ docker-compose up -d
 
 1. Acceder a http://localhost:8080
 2. Suivre l'assistant d'installation WordPress
-3. Activer le theme "Cognisens"
+3. Activer le theme "Cognysens"
 4. Installer les plugins requis
 
 ## Structure du projet
@@ -42,7 +42,7 @@ docker-compose up -d
 gognysens/
 ├── docker-compose.yml      # Configuration Docker
 ├── wordpress/wp-content/
-│   ├── themes/cognisens/   # Theme custom
+│   ├── themes/cognysens/   # Theme custom
 │   ├── plugins/            # Plugins
 │   └── mu-plugins/         # Must-use plugins
 ├── config/                 # Configs serveur
@@ -50,7 +50,7 @@ gognysens/
 └── docs/                   # Documentation
 ```
 
-## Theme Cognisens
+## Theme Cognysens
 
 Theme WordPress custom avec :
 
@@ -87,18 +87,18 @@ Le site contient 60+ pages organisees en sections :
 
 ```bash
 # Depuis le conteneur WordPress
-docker exec -it cognisens-wp php /var/www/html/wp-content/scripts/import-content.php
+docker exec -it cognysens-wp php /var/www/html/wp-content/scripts/import-content.php
 ```
 
 ## Developpement
 
 ### Modifier le theme
 
-Les fichiers du theme sont dans `wordpress/wp-content/themes/cognisens/`
+Les fichiers du theme sont dans `wordpress/wp-content/themes/cognysens/`
 
 ### Ajouter des blocs Gutenberg
 
-Creer les blocs dans `themes/cognisens/blocks/`
+Creer les blocs dans `themes/cognysens/blocks/`
 
 ## Deploiement
 
@@ -113,6 +113,6 @@ Code open source - MIT License
 
 ## Contact
 
-COGNISENS
+COGNYSENS
 109 chemin de Ronde
 78290 Croissy-sur-Seine
