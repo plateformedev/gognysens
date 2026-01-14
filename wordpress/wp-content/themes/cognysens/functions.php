@@ -277,3 +277,8 @@ require_once COGNYSENS_DIR . '/inc/rgpd-forms.php';
  * Include cookie banner configuration
  */
 require_once COGNYSENS_DIR . '/inc/cookie-banner.php';
+
+/**
+ * Include sitemap configuration
+ */
+require_once COGNYSENS_DIR . '/inc/sitemap-config.php';

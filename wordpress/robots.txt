@@ -1,0 +1,40 @@
+# Robots.txt pour Cognysens
+# https://cognysens.fr/robots.txt
+
+User-agent: *
+Allow: /
+
+# Bloquer les repertoires WordPress sensibles
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/cache/
+Disallow: /wp-content/uploads/wpcf7_uploads/
+Disallow: /trackback/
+Disallow: /feed/
+Disallow: /comments/
+Disallow: /*?*
+Disallow: /*.php$
+
+# Autoriser les fichiers CSS et JS pour le rendu
+Allow: /wp-content/themes/
+Allow: /wp-content/uploads/
+Allow: /*.css
+Allow: /*.js
+
+# Bloquer les pages de connexion et admin
+Disallow: /wp-login.php
+Disallow: /wp-register.php
+Disallow: /xmlrpc.php
+
+# Bloquer les pages de recherche
+Disallow: /?s=
+Disallow: /search/
+
+# Bloquer les parametres de tri et filtrage
+Disallow: /*?orderby=
+Disallow: /*?filter=
+Disallow: /*?replytocom=
+
+# Sitemap
+Sitemap: https://cognysens.fr/sitemap_index.xml
