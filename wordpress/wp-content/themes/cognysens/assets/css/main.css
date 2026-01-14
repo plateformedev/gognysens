@@ -2424,3 +2424,327 @@ details > *:not(summary) {
         padding: var(--spacing-lg);
     }
 }
+
+/* ==========================================================================
+   Page: Combien Coute (Pricing Detail)
+   ========================================================================== */
+
+.page-combien-coute .page-hero--pricing {
+    padding: 100px 0 80px;
+    background: var(--color-stone);
+}
+
+.pricing-hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.price-highlight {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--space-xl) 0;
+    padding: var(--space-xl) var(--space-3xl);
+    background: var(--color-white);
+    border: 2px solid var(--color-black);
+}
+
+.price-label {
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-gray-dark);
+}
+
+.price-value {
+    font-family: var(--font-heading);
+    font-size: var(--text-4xl);
+    font-weight: 600;
+    margin: var(--space-sm) 0;
+}
+
+.price-unit {
+    font-size: var(--text-sm);
+    color: var(--color-gray-medium);
+}
+
+.price-note {
+    font-size: var(--text-sm);
+    color: var(--color-gray-medium);
+    font-style: italic;
+}
+
+/* Factors Grid */
+.factors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+}
+
+.factor-card {
+    text-align: center;
+    padding: var(--space-xl);
+}
+
+.factor-icon {
+    margin-bottom: var(--space-md);
+    color: var(--color-gray-dark);
+}
+
+.factor-card h3 {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    margin: 0 0 var(--space-sm);
+}
+
+.factor-card p {
+    font-size: var(--text-sm);
+    color: var(--color-gray-medium);
+    margin: 0;
+}
+
+/* Included Grid */
+.included-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+}
+
+.included-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    background: var(--color-white);
+}
+
+.check-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: var(--color-black);
+    color: var(--color-white);
+    border-radius: 50%;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.not-included {
+    margin-top: var(--space-2xl);
+    padding: var(--space-xl);
+    background: var(--color-white);
+    border-left: 3px solid var(--color-gray-light);
+}
+
+.not-included h3 {
+    font-size: var(--text-base);
+    margin: 0 0 var(--space-md);
+    color: var(--color-gray-dark);
+}
+
+.not-included ul {
+    margin: 0;
+    padding-left: var(--space-lg);
+    color: var(--color-gray-medium);
+}
+
+.not-included li {
+    margin-bottom: var(--space-xs);
+}
+
+/* Scenarios Grid */
+.scenarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+}
+
+.scenario-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-light);
+    padding: var(--space-xl);
+}
+
+.scenario-card--featured {
+    border: 2px solid var(--color-black);
+    position: relative;
+}
+
+.scenario-card--featured::before {
+    content: 'Le plus courant';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-black);
+    color: var(--color-white);
+    padding: 4px 16px;
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.scenario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-md);
+    border-bottom: 1px solid var(--color-gray-light);
+}
+
+.scenario-label {
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-gray-medium);
+}
+
+.scenario-price {
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 600;
+}
+
+.scenario-card h3 {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    margin: 0 0 var(--space-sm);
+}
+
+.scenario-card > p {
+    font-size: var(--text-sm);
+    color: var(--color-gray-medium);
+    margin-bottom: var(--space-md);
+}
+
+.scenario-card ul {
+    margin: 0;
+    padding-left: var(--space-lg);
+    font-size: var(--text-sm);
+}
+
+.scenario-card li {
+    margin-bottom: var(--space-xs);
+}
+
+/* AMO Promo */
+.amo-promo {
+    background: var(--color-white);
+    padding: var(--space-3xl);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.amo-promo h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-2xl);
+    margin: 0 0 var(--space-md);
+}
+
+.amo-promo > p {
+    font-size: var(--text-lg);
+    color: var(--color-gray-dark);
+    margin-bottom: var(--space-xl);
+}
+
+.amo-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-xl);
+    text-align: left;
+}
+
+.amo-benefits li {
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid var(--color-gray-light);
+}
+
+.amo-benefits li:last-child {
+    border-bottom: none;
+}
+
+/* CTA Section */
+.section--cta {
+    background: var(--color-black);
+    color: var(--color-white);
+    padding: var(--space-4xl) 0;
+}
+
+.cta-box {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-box h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-3xl);
+    margin: 0 0 var(--space-md);
+    color: var(--color-white);
+}
+
+.cta-box > p {
+    color: var(--color-gray-light);
+    margin-bottom: var(--space-xl);
+}
+
+.cta-actions {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: var(--space-xl);
+}
+
+.cta-actions .btn-primary {
+    background: var(--color-white);
+    color: var(--color-black);
+    border-color: var(--color-white);
+}
+
+.cta-actions .btn-primary:hover {
+    background: var(--color-stone);
+}
+
+.cta-actions .btn-outline {
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.cta-actions .btn-outline:hover {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+.cta-reassurance {
+    font-size: var(--text-sm);
+    color: var(--color-gray-medium);
+    margin: 0;
+}
+
+/* Responsive Combien Coute */
+@media (max-width: 768px) {
+    .price-highlight {
+        padding: var(--space-lg) var(--space-xl);
+    }
+
+    .price-value {
+        font-size: var(--text-3xl);
+    }
+
+    .scenarios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .amo-promo {
+        padding: var(--space-xl);
+    }
+}
