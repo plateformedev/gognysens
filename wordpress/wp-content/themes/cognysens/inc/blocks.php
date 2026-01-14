@@ -251,5 +251,50 @@ function cognysens_register_acf_blocks() {
         'icon'              => 'money-alt',
         'keywords'          => array('tarif', 'prix', 'honoraires'),
     ));
+
+    // Livrables Block
+    acf_register_block_type(array(
+        'name'              => 'cognysens-livrables',
+        'title'             => __('Livrables Cognysens', 'cognysens'),
+        'description'       => __('Liste des livrables d\'une prestation', 'cognysens'),
+        'render_template'   => 'blocks/livrables/livrables.php',
+        'category'          => 'cognysens',
+        'icon'              => 'clipboard',
+        'keywords'          => array('livrables', 'deliverables', 'rapport'),
+        'supports'          => array(
+            'align' => false,
+            'anchor' => true,
+        ),
+    ));
+
+    // Quand Nous Solliciter Block
+    acf_register_block_type(array(
+        'name'              => 'cognysens-quand-solliciter',
+        'title'             => __('Quand Nous Solliciter', 'cognysens'),
+        'description'       => __('Section listant les situations ou faire appel a Cognysens', 'cognysens'),
+        'render_template'   => 'blocks/quand-solliciter/quand-solliciter.php',
+        'category'          => 'cognysens',
+        'icon'              => 'clock',
+        'keywords'          => array('quand', 'solliciter', 'situations', 'cas'),
+        'supports'          => array(
+            'align' => false,
+            'anchor' => true,
+        ),
+    ));
+
+    // Tableau Comparatif Block
+    acf_register_block_type(array(
+        'name'              => 'cognysens-table-comparatif',
+        'title'             => __('Tableau Comparatif', 'cognysens'),
+        'description'       => __('Tableau de comparaison entre prestations ou formules', 'cognysens'),
+        'render_template'   => 'blocks/table-comparatif/table-comparatif.php',
+        'category'          => 'cognysens',
+        'icon'              => 'editor-table',
+        'keywords'          => array('tableau', 'comparatif', 'comparison', 'table'),
+        'supports'          => array(
+            'align' => array('wide', 'full'),
+            'anchor' => true,
+        ),
+    ));
 }
 add_action('acf/init', 'cognysens_register_acf_blocks');

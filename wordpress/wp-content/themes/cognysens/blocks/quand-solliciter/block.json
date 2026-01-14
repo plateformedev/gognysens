@@ -1,0 +1,16 @@
+{
+  "name": "acf/cognysens-quand-solliciter",
+  "title": "Quand Nous Solliciter",
+  "description": "Section listant les situations ou faire appel a Cognysens",
+  "category": "cognysens",
+  "icon": "clock",
+  "keywords": ["quand", "solliciter", "situations", "cas"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "blocks/quand-solliciter/quand-solliciter.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": true
+  }
+}

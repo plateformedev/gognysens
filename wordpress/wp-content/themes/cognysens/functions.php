@@ -94,7 +94,7 @@ function cognysens_scripts() {
     // Localize script for AJAX
     wp_localize_script('cognysens-main', 'cognysensAjax', array(
         'ajaxUrl' => admin_url('admin-ajax.php'),
-        'nonce'   => wp_create_nonce('cognysens_nonce'),
+        'nonce'   => wp_create_nonce('cognysens_forms'),
     ));
 }
 add_action('wp_enqueue_scripts', 'cognysens_scripts');
@@ -272,6 +272,21 @@ require_once COGNYSENS_DIR . '/inc/recommended-plugins.php';
  * Include RGPD form helpers
  */
 require_once COGNYSENS_DIR . '/inc/rgpd-forms.php';
+
+/**
+ * Include form handler (AJAX processing)
+ */
+require_once COGNYSENS_DIR . '/inc/form-handler.php';
+
+/**
+ * Include booking integration
+ */
+require_once COGNYSENS_DIR . '/inc/booking-integration.php';
+
+/**
+ * Include analytics (GA4)
+ */
+require_once COGNYSENS_DIR . '/inc/analytics.php';
 
 /**
  * Include cookie banner configuration

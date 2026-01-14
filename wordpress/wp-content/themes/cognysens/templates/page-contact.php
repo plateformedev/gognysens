@@ -76,19 +76,19 @@ get_header();
 
                                     <div class="form-row">
                                         <div class="form-group">
-                                            <label for="contact-name">Nom *</label>
-                                            <input type="text" id="contact-name" name="name" required>
+                                            <label for="contact-name">Nom complet *</label>
+                                            <input type="text" id="contact-name" name="name" required placeholder="Votre nom et prenom">
                                         </div>
                                         <div class="form-group">
                                             <label for="contact-email">Email *</label>
-                                            <input type="email" id="contact-email" name="email" required>
+                                            <input type="email" id="contact-email" name="email" required placeholder="votre@email.fr">
                                         </div>
                                     </div>
 
                                     <div class="form-row">
                                         <div class="form-group">
                                             <label for="contact-phone">Telephone</label>
-                                            <input type="tel" id="contact-phone" name="phone">
+                                            <input type="tel" id="contact-phone" name="phone" placeholder="06 12 34 56 78">
                                         </div>
                                         <div class="form-group">
                                             <label for="contact-subject">Sujet *</label>
@@ -97,8 +97,26 @@ get_header();
                                                 <option value="expertise">Demande d'expertise</option>
                                                 <option value="amo">Demande d'AMO</option>
                                                 <option value="devis">Demande de devis</option>
+                                                <option value="autre">Autre question</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Qualification fields -->
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="contact-type-bien">Type de bien (optionnel)</label>
+                                            <select id="contact-type-bien" name="type_bien">
+                                                <option value="">Non precise</option>
+                                                <option value="appartement">Appartement</option>
+                                                <option value="immeuble">Immeuble / Copropriete</option>
+                                                <option value="maison">Maison ancienne</option>
                                                 <option value="autre">Autre</option>
                                             </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="contact-code-postal">Code postal du bien (optionnel)</label>
+                                            <input type="text" id="contact-code-postal" name="code_postal" pattern="[0-9]{5}" maxlength="5" placeholder="75001">
                                         </div>
                                     </div>
 

@@ -1,0 +1,16 @@
+{
+  "name": "acf/cognysens-livrables",
+  "title": "Livrables Cognysens",
+  "description": "Liste des livrables d'une prestation",
+  "category": "cognysens",
+  "icon": "clipboard",
+  "keywords": ["livrables", "deliverables", "rapport"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "blocks/livrables/livrables.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": true
+  }
+}

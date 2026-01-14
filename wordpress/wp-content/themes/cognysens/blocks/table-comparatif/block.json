@@ -1,0 +1,16 @@
+{
+  "name": "acf/cognysens-table-comparatif",
+  "title": "Tableau Comparatif",
+  "description": "Tableau de comparaison entre prestations ou formules",
+  "category": "cognysens",
+  "icon": "editor-table",
+  "keywords": ["tableau", "comparatif", "comparison", "table", "formules"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "blocks/table-comparatif/table-comparatif.php"
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "anchor": true
+  }
+}

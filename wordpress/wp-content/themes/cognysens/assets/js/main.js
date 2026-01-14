@@ -120,43 +120,180 @@
      * Form Validation Enhancement
      */
     function initFormValidation() {
-        const forms = document.querySelectorAll('.cognysens-contact-form');
+        const forms = document.querySelectorAll('.cognysens-contact-form, .cognysens-rdv-form');
 
         forms.forEach(form => {
-            form.addEventListener('submit', function(e) {
-                const requiredFields = form.querySelectorAll('[required]');
-                let isValid = true;
-
-                requiredFields.forEach(field => {
-                    if (!field.value.trim()) {
-                        isValid = false;
-                        field.classList.add('is-invalid');
-                    } else {
-                        field.classList.remove('is-invalid');
-                    }
-                });
-
-                // Email validation
-                const emailField = form.querySelector('input[type="email"]');
-                if (emailField && emailField.value) {
-                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                    if (!emailRegex.test(emailField.value)) {
-                        isValid = false;
-                        emailField.classList.add('is-invalid');
-                    }
-                }
-
-                if (!isValid) {
-                    e.preventDefault();
-                }
-            });
-
             // Remove invalid class on input
             form.querySelectorAll('input, textarea, select').forEach(field => {
                 field.addEventListener('input', function() {
                     this.classList.remove('is-invalid');
+                    // Hide any error message
+                    const errorEl = this.parentElement.querySelector('.field-error');
+                    if (errorEl) errorEl.remove();
                 });
             });
+        });
+    }
+
+    /**
+     * Validate form fields
+     */
+    function validateForm(form) {
+        const requiredFields = form.querySelectorAll('[required]');
+        let isValid = true;
+        let firstInvalid = null;
+
+        requiredFields.forEach(field => {
+            // Clear previous error
+            field.classList.remove('is-invalid');
+            const existingError = field.parentElement.querySelector('.field-error');
+            if (existingError) existingError.remove();
+
+            // Check empty
+            if (!field.value.trim()) {
+                isValid = false;
+                field.classList.add('is-invalid');
+                if (!firstInvalid) firstInvalid = field;
+                return;
+            }
+
+            // Check checkbox
+            if (field.type === 'checkbox' && !field.checked) {
+                isValid = false;
+                field.classList.add('is-invalid');
+                if (!firstInvalid) firstInvalid = field;
+                return;
+            }
+
+            // Check radio groups
+            if (field.type === 'radio') {
+                const name = field.name;
+                const group = form.querySelectorAll(`input[name="${name}"]`);
+                const anyChecked = Array.from(group).some(r => r.checked);
+                if (!anyChecked) {
+                    isValid = false;
+                    field.classList.add('is-invalid');
+                    if (!firstInvalid) firstInvalid = field;
+                }
+            }
+        });
+
+        // Email validation
+        const emailField = form.querySelector('input[type="email"]');
+        if (emailField && emailField.value) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailField.value)) {
+                isValid = false;
+                emailField.classList.add('is-invalid');
+                if (!firstInvalid) firstInvalid = emailField;
+            }
+        }
+
+        // Phone validation (French format)
+        const phoneField = form.querySelector('input[type="tel"]');
+        if (phoneField && phoneField.value) {
+            const cleanPhone = phoneField.value.replace(/[\s.-]/g, '');
+            if (!/^(0|\+33)[1-9][0-9]{8}$/.test(cleanPhone)) {
+                isValid = false;
+                phoneField.classList.add('is-invalid');
+                if (!firstInvalid) firstInvalid = phoneField;
+            }
+        }
+
+        // Focus first invalid field
+        if (firstInvalid) {
+            firstInvalid.focus();
+        }
+
+        return isValid;
+    }
+
+    /**
+     * AJAX Form Submission
+     */
+    function initAjaxForms() {
+        // Contact Form
+        const contactForm = document.querySelector('.cognysens-contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                if (validateForm(this)) {
+                    submitForm(this, 'cognysens_contact');
+                }
+            });
+        }
+
+        // RDV Form
+        const rdvForm = document.querySelector('.cognysens-rdv-form');
+        if (rdvForm) {
+            rdvForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                if (validateForm(this)) {
+                    submitForm(this, 'cognysens_rdv');
+                }
+            });
+        }
+    }
+
+    /**
+     * Submit form via AJAX
+     */
+    function submitForm(form, action) {
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+
+        // Disable button and show loading
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Envoi en cours...';
+        submitBtn.classList.add('is-loading');
+
+        // Collect form data
+        const formData = new FormData(form);
+        formData.append('action', action);
+        formData.append('nonce', window.cognysensAjax?.nonce || '');
+
+        // Send AJAX request
+        fetch(window.cognysensAjax?.ajaxUrl || '/wp-admin/admin-ajax.php', {
+            method: 'POST',
+            body: formData,
+            credentials: 'same-origin'
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Remove existing messages
+            const existingMsg = form.querySelector('.form-message');
+            if (existingMsg) existingMsg.remove();
+
+            // Create message element
+            const messageEl = document.createElement('div');
+            messageEl.className = 'form-message ' + (data.success ? 'form-message--success' : 'form-message--error');
+            messageEl.innerHTML = '<p>' + (data.data?.message || 'Une erreur est survenue.') + '</p>';
+
+            // Insert before submit button
+            submitBtn.parentElement.insertBefore(messageEl, submitBtn);
+
+            if (data.success) {
+                // Reset form on success
+                form.reset();
+                // Scroll to message
+                messageEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        })
+        .catch(error => {
+            console.error('Form submission error:', error);
+            const existingMsg = form.querySelector('.form-message');
+            if (existingMsg) existingMsg.remove();
+
+            const messageEl = document.createElement('div');
+            messageEl.className = 'form-message form-message--error';
+            messageEl.innerHTML = '<p>Erreur de connexion. Veuillez reessayer.</p>';
+            submitBtn.parentElement.insertBefore(messageEl, submitBtn);
+        })
+        .finally(() => {
+            // Re-enable button
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText;
+            submitBtn.classList.remove('is-loading');
         });
     }
 
@@ -224,6 +361,7 @@
         initSmoothScroll();
         initFaqAccordion();
         initFormValidation();
+        initAjaxForms();
         initAnimations();
         initLazyLoad();
     }
