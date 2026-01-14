@@ -8,14 +8,23 @@ wordpress/*.php
 wordpress/license.txt
 wordpress/readme.html
 
+# WP-Content index files
+wordpress/wp-content/index.php
+wordpress/wp-content/themes/index.php
+wordpress/wp-content/plugins/index.php
+
 # Uploads
 wordpress/wp-content/uploads/
 
-# Cache
+# Cache & LiteSpeed
 wordpress/wp-content/cache/
+wordpress/wp-content/litespeed/
 wordpress/wp-content/advanced-cache.php
 wordpress/wp-content/wp-cache-config.php
 wordpress/wp-content/object-cache.php
+
+# Languages (installed by WP)
+wordpress/wp-content/languages/
 
 # Backup files
 wordpress/wp-content/backup-db/
@@ -23,8 +32,30 @@ wordpress/wp-content/backups/
 *.sql
 *.sql.gz
 
-# Debug log
+# Debug & Logs
 wordpress/wp-content/debug.log
+wordpress/wp-content/wflogs/
+
+# Plugins (installed via admin, not tracked in repo)
+wordpress/wp-content/plugins/akismet/
+wordpress/wp-content/plugins/hello.php
+wordpress/wp-content/plugins/wordfence/
+wordpress/wp-content/plugins/litespeed-cache/
+wordpress/wp-content/plugins/redirection/
+wordpress/wp-content/plugins/seo-by-rank-math/
+wordpress/wp-content/plugins/complianz-gdpr/
+
+# Premium plugins (do not commit licenses)
+wordpress/wp-content/plugins/gravityforms/
+wordpress/wp-content/plugins/advanced-custom-fields-pro/
+wordpress/wp-content/plugins/wp-rocket/
+wordpress/wp-content/plugins/amelia/
+
+# Default WP themes (not needed)
+wordpress/wp-content/themes/twentytwenty*/
+
+# Scripts (runtime generated)
+wordpress/wp-content/scripts/
 
 # System files
 .DS_Store
@@ -43,9 +74,5 @@ node_modules/
 # Composer
 vendor/
 
-# Premium plugins (do not commit licenses)
-wordpress/wp-content/plugins/gravityforms/
-wordpress/wp-content/plugins/advanced-custom-fields-pro/
-wordpress/wp-content/plugins/wp-rocket/
-wordpress/wp-content/plugins/amelia/
+# Claude temp files
 tmpclaude*

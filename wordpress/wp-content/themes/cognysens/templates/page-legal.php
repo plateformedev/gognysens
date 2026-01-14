@@ -24,6 +24,7 @@ get_header();
             </header>
 
             <div class="entry-content legal-content">
+                <div class="container container--narrow">
                 <?php the_content(); ?>
 
                 <?php
@@ -147,6 +148,7 @@ get_header();
                     endswitch;
                 endif;
                 ?>
+                </div>
             </div>
 
         </article>

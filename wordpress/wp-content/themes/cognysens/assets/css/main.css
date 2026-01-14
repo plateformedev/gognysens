@@ -46,7 +46,7 @@
   --text-5xl: 3rem;
   --text-6xl: 3.5rem;
 
-  /* Spacing */
+  /* Spacing (--space-* naming) */
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-md: 1rem;
@@ -56,6 +56,14 @@
   --space-3xl: 4rem;
   --space-4xl: 6rem;
   --space-section: 7.5rem;
+
+  /* Spacing aliases (--spacing-* naming for compatibility) */
+  --spacing-xs: var(--space-xs);
+  --spacing-sm: var(--space-sm);
+  --spacing-md: var(--space-md);
+  --spacing-lg: var(--space-lg);
+  --spacing-xl: var(--space-xl);
+  --spacing-xxl: var(--space-2xl);
 
   /* Layout */
   --max-width: 1200px;
